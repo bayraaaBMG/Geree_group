@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Хүдэр Групп — Дэлхийн жишиг рүү</title>
+<meta name="description" content="Хүдэр Групп — Монголын уул уурхайн нэгдсэн холдинг. 8 охин компани, 6,400 ажилтан, 28 жилийн туршлага.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23b06321'/%3E%3Ctext x='16' y='23' font-family='Arial' font-size='20' font-weight='bold' fill='white' text-anchor='middle'%3EX%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Golos+Text:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Nav inserted by shared.js -->
+
+<!-- HERO SLIDER -->
+<div class="hero">
+  <div class="slides" id="slides"></div>
+  <div class="slide-arrows"><div class="wrap">
+    <button class="arrow" id="prev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 6l-6 6 6 6"/></svg></button>
+    <button class="arrow" id="next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg></button>
+  </div></div>
+  <div class="dots" id="dots"></div>
+</div>
+
+<!-- ОНЦЛОХ МЭДЭЭ -->
+<section class="news-sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <h3><span class="bar"></span>Онцлох мэдээ</h3>
+      <a class="seeall" href="news.html">Бусад мэдээ →</a>
+    </div>
+    <div class="news-grid" id="newsGrid"></div>
+  </div>
+</section>
+
+<!-- КОМПАНИУД -->
+<section class="companies">
+  <div class="wrap">
+    <div class="sec-head">
+      <h3><span class="bar"></span>Компаниуд</h3>
+      <a class="seeall" href="business.html">Бүгдийг үзэх →</a>
+    </div>
+    <div class="comp-grid" id="compGrid"></div>
+  </div>
+</section>
+
+<!-- АЖЛЫН БАЙР + ХУДАЛДАН АВАЛТ -->
+<section class="jp">
+  <div class="wrap jp-grid">
+    <div>
+      <h3>Нээлттэй ажлын байр <span class="count">159</span></h3>
+      <p class="lead">Группын охин компаниудын идэвхтэй зарлагдсан ажлын байрууд.</p>
+      <ul class="jlist" id="homeJobs"></ul>
+      <a class="seeall" href="jobs.html" style="margin-top:18px;display:inline-flex">Бүх ажлын байр →</a>
+    </div>
+    <div>
+      <h3>Идэвхтэй худалдан авалт <span class="count">8</span></h3>
+      <p class="lead">Нийлүүлэгчдэд зориулсан нээлттэй тендер, урилга.</p>
+      <ul class="jlist" id="homeProc"></ul>
+      <a class="seeall" href="procurement.html" style="margin-top:18px;display:inline-flex">Бүгдийг үзэх →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ТОГТВОРТОЙ ХӨГЖИЛ -->
+<section style="background:var(--ink);color:#fff">
+  <div class="wrap">
+    <div class="sec-head">
+      <h3 style="color:#fff"><span class="bar"></span>Тогтвортой хөгжил</h3>
+      <a class="seeall" href="esg-report.html" style="color:var(--copper-bright)">Тайлан унших →</a>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#322d26;border:1px solid #322d26">
+      <div style="background:var(--ink);padding:34px 28px">
+        <div style="font-family:'Oswald';font-size:44px;font-weight:700;color:var(--copper-bright);line-height:1">−42%</div>
+        <div style="color:#a9a293;margin-top:10px">Цэвэр усны хэрэглээг эргэлтийн системээр бууруулсан.</div>
+      </div>
+      <div style="background:var(--ink);padding:34px 28px">
+        <div style="font-family:'Oswald';font-size:44px;font-weight:700;color:var(--copper-bright);line-height:1">1.2М</div>
+        <div style="color:#a9a293;margin-top:10px">Сүүлийн 5 жилд тарьсан мод.</div>
+      </div>
+      <div style="background:var(--ink);padding:34px 28px">
+        <div style="font-family:'Oswald';font-size:44px;font-weight:700;color:var(--copper-bright);line-height:1">0</div>
+        <div style="color:#a9a293;margin-top:10px">Сүүлийн жилийн ноцтой ослын тоо.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ХЭРЭГТЭЙ ХОЛБООС -->
+<section class="ulinks">
+  <div class="wrap ul-grid">
+    <div>
+      <h4 style="font-family:'Oswald';text-transform:uppercase;letter-spacing:1px;font-size:20px;margin-bottom:18px">Хэрэгтэй холбоос</h4>
+      <div class="ul-list">
+        <a href="news-faq.html">Түгээмэл асуулт</a>
+        <a href="esg-report.html">Тогтвортой хөгжлийн тайлан</a>
+        <a href="about-ethics.html">Ёс зүйн дүрэм</a>
+        <a href="procurement.html">Нийлүүлэгчээр бүртгүүлэх</a>
+        <a href="contact.html">Санал, хүсэлт</a>
+      </div>
+    </div>
+    <div class="social">
+      <h4>Биднийг дагаарай</h4>
+      <div class="social-row">
+        <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M13 22v-8h2.7l.4-3H13V9.1c0-.9.3-1.5 1.6-1.5H16V5c-.3 0-1.2-.1-2.3-.1-2.3 0-3.7 1.4-3.7 3.9V11H7.5v3H10v8h3z"/></svg></a>
+        <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 1.2.1 1.8.3 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.2.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 1.2-.3 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.2.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.2-.1-1.8-.3-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8c.1-1.2.3-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2zm0 3.2A6.6 6.6 0 1012 18.6 6.6 6.6 0 0012 5.4zm0 10.9a4.3 4.3 0 110-8.6 4.3 4.3 0 010 8.6zM18.9 5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/></svg></a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M6.9 8H3.6v12h3.3V8zM5.2 3.4a1.9 1.9 0 100 3.8 1.9 1.9 0 000-3.8zM20.4 20v-6.6c0-3.5-1.9-5.2-4.4-5.2-2 0-2.9 1.1-3.4 1.9V8H9.3v12h3.3v-6.3c0-1.7.3-3.3 2.4-3.3 2 0 2.1 1.9 2.1 3.4V20h3.3z"/></svg></a>
+        <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M22 7.5c-.2-1.4-.8-2.4-2.3-2.6C17.6 4.5 12 4.5 12 4.5s-5.6 0-7.7.4C2.8 5.1 2.2 6.1 2 7.5 1.7 9 1.7 12 1.7 12s0 3 .3 4.5c.2 1.4.8 2.4 2.3 2.6 2.1.4 7.7.4 7.7.4s5.6 0 7.7-.4c1.5-.2 2.1-1.2 2.3-2.6.3-1.5.3-4.5.3-4.5s0-3-.3-4.5zM10 15V9l5.2 3L10 15z"/></svg></a>
+      </div>
+      <p style="margin-top:20px;color:var(--muted);font-size:14px">Улаанбаатар хот · info@khuder.mn · +976 7000 0000</p>
+    </div>
+  </div>
+</section>
+
+<!-- Footer + modals inserted by shared.js -->
+
+<script src="js/shared.js"></script>
+<script>
+initAll();
+
+// Slider
+const slidesEl = document.getElementById('slides');
+const dotsEl   = document.getElementById('dots');
+slidesEl.innerHTML = projects.map((s,i) =>
+  `<div class="slide ${i===0?'active':''}">
+    <div class="sbg" style="background:radial-gradient(120% 100% at 80% 0%, ${s.bg}, #0f0d0b)"></div>
+    <div class="wrap slide-content">
+      <span class="kicker">${s.k}</span>
+      <h2>${s.t}</h2>
+      <p>${s.d}</p>
+      <a class="more" href="esg-projects.html">Дэлгэрэнгүй →</a>
+    </div>
+  </div>`
+).join('');
+dotsEl.innerHTML = `<div class="wrap">${projects.map((s,i) =>
+  `<button class="dot ${i===0?'active':''}" data-i="${i}"></button>`
+).join('')}</div>`;
+
+let cur = 0;
+const N = projects.length;
+const sEls = [...document.querySelectorAll('.slide')];
+const dEls = [...document.querySelectorAll('.dot')];
+function go(n) {
+  cur = (n+N)%N;
+  sEls.forEach((e,i) => e.classList.toggle('active', i===cur));
+  dEls.forEach((e,i) => e.classList.toggle('active', i===cur));
+}
+document.getElementById('next').onclick = () => { go(cur+1); rs(); };
+document.getElementById('prev').onclick = () => { go(cur-1); rs(); };
+dEls.forEach(d => d.onclick = () => { go(+d.dataset.i); rs(); });
+let timer = setInterval(() => go(cur+1), 6000);
+function rs() { clearInterval(timer); timer = setInterval(() => go(cur+1), 6000); }
+
+// News grid
+document.getElementById('newsGrid').innerHTML = news.slice(0,3).map((n,i) =>
+  `<div class="ncard" data-news="${i}">
+    <div class="nimg">
+      <div class="ph"><svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="#c3b8a4" stroke-width="1.4"><path d="M3 14l4-7 5 3 4-4 5 5v8H3z"/></svg></div>
+      <span class="date">${n.d}</span>
+    </div>
+    <div class="nbody"><h4>${n.t}</h4><p>${n.p}</p><span class="read">Дэлгэрэнгүй →</span></div>
+  </div>`
+).join('');
+
+// Company grid
+document.getElementById('compGrid').innerHTML = subs.map((s,i) => compCard(s,i)).join('');
+
+// Jobs / Proc lists
+document.getElementById('homeJobs').innerHTML = jobs.slice(0,4).map(j => jli(j,'jobs')).join('');
+document.getElementById('homeProc').innerHTML = proc.slice(0,3).map(p => jli(p,'proc')).join('');
+</script>
+</body>
+</html>

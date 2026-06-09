@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Хүдэр Групп — Дэлхийн жишиг рүү</title>
+<meta name="description" content="Хүдэр Групп — Монголын уул уурхайн нэгдсэн холдинг. Нүүрс, зэс, алт олборлолт, тээвэр логистик, эрчим хүч, барилга, байгаль орчны нөхөн сэргээлт.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Хүдэр Групп — Дэлхийн жишиг рүү">
+<meta property="og:description" content="Монголын уул уурхайн нэгдсэн холдинг. 8 охин компани, 6,400 ажилтан, 28 жилийн туршлага.">
+<meta property="og:site_name" content="Хүдэр Групп">
+<meta property="og:locale" content="mn_MN">
+<meta property="og:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='630'%3E%3Crect width='1200' height='630' fill='%231b1916'/%3E%3Crect x='90' y='250' width='60' height='60' fill='%23b06321' transform='rotate(45 120 280)'/%3E%3Ctext x='90' y='360' font-family='Arial' font-size='64' font-weight='bold' fill='white'%3EХҮДЭР ГРУПП%3C/text%3E%3Ctext x='92' y='420' font-family='Arial' font-size='30' fill='%23c9772e'%3EДэлхийн жишиг рүү%3C/text%3E%3C/svg%3E">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Хүдэр Групп — Дэлхийн жишиг рүү">
+<meta name="twitter:description" content="Монголын уул уурхайн нэгдсэн холдинг.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23b06321'/%3E%3Ctext x='16' y='23' font-family='Arial' font-size='20' font-weight='bold' fill='white' text-anchor='middle'%3EX%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Golos+Text:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#f6f4ef;--white:#fff;--ink:#1b1916;--ink2:#4a463f;--muted:#857f74;--line:#e3ddd2;--copper:#b06321;--copper-bright:#c9772e;--gold:#a9842f;--sand:#efe9df;--max:1240px}
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--ink);font-family:'Golos Text',sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+  h1,h2,h3,h4,h5,.dh{font-family:'Oswald',sans-serif;font-weight:600;letter-spacing:.3px}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 26px}
+  img{max-width:100%}
+
+  /* TOPBAR + NAV */
+  .topbar{background:var(--ink);color:#d9d3c8;font-size:13px}
+  .topbar .wrap{display:flex;justify-content:flex-end;align-items:center;gap:24px;height:38px;font-family:'Oswald';letter-spacing:.6px;text-transform:uppercase}
+  .topbar a{color:#cfc8bc;transition:.2s}.topbar a:hover{color:var(--copper-bright)}
+  .topbar .sep{width:1px;height:14px;background:#3a352d}
+  nav{background:var(--white);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:60}
+  .nav-in{display:flex;align-items:center;justify-content:space-between;height:74px}
+  .logo{display:flex;align-items:center;gap:12px;font-family:'Oswald';font-weight:700;font-size:23px;letter-spacing:2px;color:var(--ink)}
+  .logo .mark{width:34px;height:34px;display:grid;place-items:center;background:var(--copper);transform:rotate(45deg)}
+  .logo .mark span{transform:rotate(-45deg);color:#fff;font-size:17px;font-weight:700}
+  .menu{display:flex;align-items:center;gap:2px;height:100%}
+  .menu>li{list-style:none;position:relative;height:100%;display:flex;align-items:center}
+  .menu>li>a{padding:0 15px;font-family:'Oswald';font-size:15px;letter-spacing:.5px;text-transform:uppercase;color:var(--ink2);height:100%;display:flex;align-items:center;gap:5px;transition:.2s;border-bottom:3px solid transparent}
+  .menu>li:hover>a,.menu>li>a.active{color:var(--copper);border-bottom-color:var(--copper)}
+  .menu .caret{font-size:9px;opacity:.6}
+  .dropdown{position:absolute;top:100%;left:0;min-width:250px;background:var(--white);border:1px solid var(--line);box-shadow:0 18px 40px rgba(0,0,0,.10);opacity:0;visibility:hidden;transform:translateY(8px);transition:.22s;padding:8px 0}
+  .menu>li:hover .dropdown{opacity:1;visibility:visible;transform:none}
+  .dropdown a{display:block;padding:11px 22px;font-size:14.5px;color:var(--ink2);border-left:3px solid transparent;transition:.18s}
+  .dropdown a:hover{background:var(--sand);color:var(--copper);border-left-color:var(--copper)}
+  .nav-utils{display:flex;align-items:center;gap:18px}
+  .icon-btn{background:none;border:none;cursor:pointer;color:var(--ink2);display:grid;place-items:center}
+  .icon-btn:hover{color:var(--copper)}.icon-btn svg{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:1.8}
+  .lang{font-family:'Oswald';font-size:14px;letter-spacing:1px;color:var(--ink2);text-transform:uppercase}.lang:hover{color:var(--copper)}
+  .burger{display:none;flex-direction:column;gap:5px;cursor:pointer}
+  .burger span{width:25px;height:2px;background:var(--ink);transition:.3s}
+  .burger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+  .burger.open span:nth-child(2){opacity:0}
+  .burger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+  .mobile-menu{position:fixed;inset:74px 0 0;z-index:55;background:var(--white);overflow-y:auto;padding:10px 0 40px;transform:translateX(100%);transition:.32s;display:none}
+  .mobile-menu.open{transform:none}
+  .mobile-menu a{display:block;padding:14px 26px;font-family:'Oswald';font-size:16px;text-transform:uppercase;letter-spacing:.6px;border-bottom:1px solid var(--line);color:var(--ink2)}
+  .mobile-menu a.sub{padding-left:44px;font-size:13.5px;color:var(--muted);background:var(--bg);text-transform:none;letter-spacing:0}
+
+  /* HERO SLIDER */
+  .hero{position:relative;height:clamp(440px,72vh,620px);overflow:hidden;background:var(--ink)}
+  .slide{position:absolute;inset:0;opacity:0;transition:opacity 1s;display:flex;align-items:flex-end}
+  .slide.active{opacity:1}
+  .slide .sbg{position:absolute;inset:0}.slide .sbg::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(15,13,11,.92),rgba(15,13,11,.25) 60%,rgba(15,13,11,.35))}
+  .slide-content{position:relative;z-index:2;color:#fff;padding:0 0 78px}
+  .slide .kicker{display:inline-flex;align-items:center;gap:9px;font-family:'Oswald';text-transform:uppercase;letter-spacing:2.5px;font-size:13px;color:var(--copper-bright);margin-bottom:16px}
+  .slide .kicker::before{content:"";width:30px;height:1px;background:var(--copper-bright)}
+  .slide h2{font-size:clamp(30px,5vw,54px);line-height:1.02;max-width:18ch;margin-bottom:16px}
+  .slide p{font-size:clamp(15px,1.8vw,18px);color:#d8d2c7;max-width:54ch;margin-bottom:26px}
+  .slide .more{display:inline-flex;align-items:center;gap:9px;font-family:'Oswald';text-transform:uppercase;letter-spacing:1px;font-size:14px;border-bottom:2px solid var(--copper);padding-bottom:4px;transition:.25s;cursor:pointer}
+  .slide .more:hover{gap:15px;color:var(--copper-bright)}
+  .dots{position:absolute;bottom:30px;right:0;left:0;z-index:5}
+  .dots .wrap{display:flex;gap:9px;justify-content:flex-end}
+  .dot{width:34px;height:4px;background:rgba(255,255,255,.32);border:none;cursor:pointer;transition:.3s}
+  .dot.active{background:var(--copper-bright);width:52px}
+  .slide-arrows{position:absolute;z-index:5;bottom:26px;left:0;right:0}
+  .slide-arrows .wrap{display:flex;gap:10px}
+  .arrow{width:46px;height:46px;border:1px solid rgba(255,255,255,.35);background:rgba(0,0,0,.2);color:#fff;cursor:pointer;display:grid;place-items:center;transition:.2s}
+  .arrow:hover{background:var(--copper);border-color:var(--copper)}.arrow svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:2}
+
+  section{padding:84px 0}
+  .sec-head{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:36px;gap:24px;flex-wrap:wrap}
+  .sec-head h3{font-size:clamp(24px,3.4vw,36px);text-transform:uppercase;letter-spacing:1px}
+  .sec-head h3 .bar,.barx{display:inline-block;width:42px;height:4px;background:var(--copper);vertical-align:middle;margin-right:14px}
+  .seeall{font-family:'Oswald';text-transform:uppercase;letter-spacing:1px;font-size:14px;color:var(--copper);display:inline-flex;align-items:center;gap:8px;cursor:pointer}.seeall:hover{gap:13px}
+
+  .news-sec{background:var(--white);border-top:1px solid var(--line)}
+  .news-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .ncard{border:1px solid var(--line);background:var(--white);transition:.28s;cursor:pointer;display:flex;flex-direction:column}
+  .ncard:hover{box-shadow:0 16px 36px rgba(0,0,0,.08);transform:translateY(-4px)}
+  .ncard .nimg{height:178px;position:relative;overflow:hidden}
+  .ncard .ph{position:absolute;inset:0;background:repeating-linear-gradient(135deg,#ece4d7,#ece4d7 16px,#e5dccd 16px,#e5dccd 32px);display:grid;place-items:center;color:#c3b8a4}
+  .ncard .date{position:absolute;left:0;bottom:0;background:var(--copper);color:#fff;font-family:'Oswald';font-size:13px;padding:6px 14px}
+  .ncard .nbody{padding:22px 22px 26px;flex:1;display:flex;flex-direction:column}
+  .ncard h4{font-size:18.5px;line-height:1.28;margin-bottom:12px}
+  .ncard p{font-size:14px;color:var(--muted);flex:1}
+  .ncard .read{font-family:'Oswald';text-transform:uppercase;font-size:13px;letter-spacing:1px;color:var(--copper);margin-top:16px}
+
+  .companies{background:var(--bg)}
+  .comp-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+  .comp{background:var(--white);border:1px solid var(--line);padding:30px 24px;cursor:pointer;transition:.26s;position:relative;overflow:hidden}
+  .comp::after{content:"";position:absolute;left:0;bottom:0;height:4px;width:0;background:var(--copper);transition:.3s}
+  .comp:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(0,0,0,.07)}.comp:hover::after{width:100%}
+  .comp .cico{width:48px;height:48px;display:grid;place-items:center;border:1px solid var(--line);color:var(--copper);margin-bottom:18px;transition:.26s}
+  .comp:hover .cico{background:var(--copper);color:#fff;border-color:var(--copper)}.comp .cico svg{width:24px;height:24px;stroke:currentColor;fill:none;stroke-width:1.6}
+  .comp .csec{font-family:'Oswald';font-size:11.5px;letter-spacing:1.3px;text-transform:uppercase;color:var(--muted)}
+  .comp h4{font-size:19px;margin-top:4px}
+
+  .jp{background:var(--white);border-top:1px solid var(--line)}
+  .jp-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+  .jp h3{font-size:24px;text-transform:uppercase;letter-spacing:.8px;display:flex;align-items:baseline;gap:12px;margin-bottom:8px}
+  .jp h3 .count{font-size:20px;color:#fff;background:var(--copper);font-family:'Oswald';padding:2px 12px}
+  .jp .lead{color:var(--muted);font-size:14.5px;margin-bottom:18px}
+  .jlist{list-style:none}
+  .jlist li{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:18px 4px;border-bottom:1px solid var(--line);cursor:pointer;transition:.2s}
+  .jlist li:hover{padding-left:12px;background:var(--bg)}
+  .jlist .jt{font-weight:600}.jlist .jm{font-size:13px;color:var(--muted)}.jlist .jarr{color:var(--copper);font-size:18px}
+
+  .ulinks{background:var(--sand)}
+  .ul-grid{display:grid;grid-template-columns:2fr 1fr;gap:48px;align-items:center}
+  .ul-list{display:flex;flex-wrap:wrap;gap:12px}
+  .ul-list a{background:var(--white);border:1px solid var(--line);padding:13px 20px;font-family:'Oswald';font-size:14px;letter-spacing:.5px;text-transform:uppercase;color:var(--ink2);transition:.2s;cursor:pointer}
+  .ul-list a:hover{background:var(--copper);color:#fff;border-color:var(--copper)}
+  .social h4{font-size:20px;text-transform:uppercase;letter-spacing:1px;margin-bottom:16px}
+  .social-row{display:flex;gap:12px}
+  .social-row a{width:44px;height:44px;border:1px solid var(--line);background:var(--white);display:grid;place-items:center;color:var(--ink2);transition:.2s}
+  .social-row a:hover{background:var(--copper);color:#fff;border-color:var(--copper);transform:translateY(-3px)}.social-row svg{width:19px;height:19px;fill:currentColor}
+
+  footer{background:var(--ink);color:#c7c0b4;padding:60px 0 26px}
+  .foot-top{display:grid;grid-template-columns:1.7fr 1fr 1fr 1.2fr;gap:38px;margin-bottom:44px}
+  .foot-top h5{font-family:'Oswald';font-size:14px;letter-spacing:1.4px;text-transform:uppercase;color:var(--copper-bright);margin-bottom:16px}
+  .foot-top a,.foot-top p{display:block;color:#b8b1a5;font-size:14px;margin-bottom:10px;transition:.2s;cursor:pointer}
+  .foot-top a:hover{color:#fff}
+  .foot-logo{font-family:'Oswald';font-weight:700;font-size:22px;letter-spacing:2px;color:#fff;margin-bottom:14px;display:block}
+  .foot-bot{border-top:1px solid #322d26;padding-top:22px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:13px;color:#8d867a}
+  .foot-bot a{color:#8d867a;cursor:pointer}.foot-bot a:hover{color:#fff}
+
+  /* SUBPAGE */
+  #subpage{display:none}
+  .page-hero{background:var(--ink);color:#fff;padding:54px 0}
+  .crumb{font-family:'Oswald';font-size:13px;letter-spacing:.6px;text-transform:uppercase;color:#a9a293;margin-bottom:14px}
+  .crumb a{color:var(--copper-bright);cursor:pointer}.crumb span{margin:0 8px;color:#5b554c}
+  .page-hero h1{font-size:clamp(28px,4.4vw,46px);line-height:1.05}
+  .page-hero p{color:#cfc8bc;margin-top:12px;max-width:62ch;font-size:16px}
+  .page-body{padding:64px 0}
+  .prose{max-width:820px}
+  .prose p{color:var(--ink2);font-size:16.5px;margin-bottom:18px}
+  .prose h3{font-size:24px;text-transform:uppercase;letter-spacing:.6px;margin:34px 0 16px}
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+  .card{background:var(--white);border:1px solid var(--line);padding:28px 26px}
+  .card h4{font-size:19px;margin-bottom:10px}.card p{color:var(--muted);font-size:14.5px}
+  .card .vnum{font-family:'Oswald';font-size:34px;font-weight:700;color:var(--copper);line-height:1;margin-bottom:8px}
+  /* timeline */
+  .tl{position:relative;margin-left:8px;padding-left:34px;border-left:2px solid var(--line)}
+  .tl .tli{position:relative;padding:0 0 34px}
+  .tl .tli::before{content:"";position:absolute;left:-43px;top:3px;width:16px;height:16px;background:var(--copper);border:3px solid var(--bg);border-radius:50%}
+  .tl .ty{font-family:'Oswald';font-size:22px;font-weight:700;color:var(--copper)}
+  .tl .tt{font-weight:600;margin:2px 0 4px}.tl p{color:var(--muted);font-size:14.5px}
+  /* leaders */
+  .lead-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .leader{background:var(--white);border:1px solid var(--line)}
+  .leader .lph{height:230px;background:linear-gradient(135deg,#e7ddcc,#d8cdb8);display:grid;place-items:center;color:#b3a68d}
+  .leader .lb{padding:22px 24px}.leader h4{font-size:19px}.leader .lr{color:var(--copper);font-family:'Oswald';font-size:13px;letter-spacing:.6px;text-transform:uppercase;margin-top:4px}
+  .leader p{color:var(--muted);font-size:14px;margin-top:10px}
+  /* faq */
+  .faq{border-top:1px solid var(--line);max-width:860px}
+  .faq .q{border-bottom:1px solid var(--line);padding:20px 4px;cursor:pointer;display:flex;justify-content:space-between;gap:16px;align-items:center;font-weight:600;font-size:16.5px}
+  .faq .q .pm{color:var(--copper);font-size:22px;font-family:'Oswald';transition:.2s}
+  .faq .a{max-height:0;overflow:hidden;transition:.3s;color:var(--muted);font-size:15px}
+  .faq .item.open .a{max-height:300px;padding:0 4px 22px}
+  .faq .item.open .pm{transform:rotate(45deg)}
+  /* steps */
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;counter-reset:s}
+  .step{background:var(--white);border:1px solid var(--line);padding:26px 22px;position:relative}
+  .step::before{counter-increment:s;content:"0" counter(s);font-family:'Oswald';font-size:40px;font-weight:700;color:var(--sand);position:absolute;top:14px;right:18px}
+  .step h4{font-size:17px;margin-bottom:8px;position:relative}.step p{color:var(--muted);font-size:14px;position:relative}
+  /* table */
+  .ktable{width:100%;border-collapse:collapse;background:var(--white);border:1px solid var(--line)}
+  .ktable th,.ktable td{text-align:left;padding:15px 18px;border-bottom:1px solid var(--line);font-size:15px}
+  .ktable th{font-family:'Oswald';text-transform:uppercase;letter-spacing:.5px;font-size:13px;color:var(--ink2);background:var(--sand)}
+  .ktable td .pct{color:var(--copper);font-weight:600}
+  /* download row */
+  .dl{display:flex;align-items:center;justify-content:space-between;gap:16px;background:var(--white);border:1px solid var(--line);padding:18px 22px;margin-bottom:12px}
+  .dl .dlb{font-family:'Oswald';text-transform:uppercase;font-size:13px;letter-spacing:.6px;color:#fff;background:var(--copper);padding:9px 16px;cursor:pointer}
+  /* form */
+  .cform{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:760px}
+  .cform .full{grid-column:1/-1}
+  .cform label{display:block;font-family:'Oswald';font-size:13px;letter-spacing:.5px;text-transform:uppercase;color:var(--ink2);margin-bottom:7px}
+  .cform input,.cform textarea{width:100%;padding:13px 14px;border:1px solid var(--line);background:var(--white);font-family:inherit;font-size:15px;color:var(--ink)}
+  .cform input:focus,.cform textarea:focus{outline:none;border-color:var(--copper)}
+  .cform textarea{min-height:130px;resize:vertical}
+  .cform button{justify-self:start;background:var(--copper);color:#fff;border:none;font-family:'Oswald';text-transform:uppercase;letter-spacing:1px;font-size:15px;padding:14px 32px;cursor:pointer;transition:.2s}
+  .cform button:hover{background:var(--copper-bright)}
+  .form-ok{background:#e8f3e8;border:1px solid #b9d8b9;color:#2f6b2f;padding:14px 18px;margin-bottom:18px;display:none}
+  .form-err{background:#fbeae8;border:1px solid #e0b4ad;color:#a63226;padding:14px 18px;margin-bottom:18px;display:none}
+  .contact-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:48px}
+  .cinfo .ci{display:flex;gap:14px;padding:18px 0;border-bottom:1px solid var(--line)}
+  .cinfo .ci .l{font-family:'Oswald';text-transform:uppercase;font-size:12px;letter-spacing:.6px;color:var(--muted);width:90px;flex-shrink:0;padding-top:3px}
+  .cinfo .ci .v{font-size:15.5px}
+
+  /* SEARCH OVERLAY */
+  .search-ov{position:fixed;inset:0;z-index:95;background:rgba(20,17,13,.6);backdrop-filter:blur(5px);opacity:0;pointer-events:none;transition:.25s}
+  .search-ov.open{opacity:1;pointer-events:auto}
+  .search-inner{background:var(--white);max-width:680px;margin:0 auto;margin-top:14vh;position:relative;transform:translateY(-16px);transition:.3s;box-shadow:0 30px 70px rgba(0,0,0,.3)}
+  .search-ov.open .search-inner{transform:none}
+  .search-x{position:absolute;top:-46px;right:0;width:38px;height:38px;border:1px solid rgba(255,255,255,.4);background:transparent;color:#fff;font-size:18px;cursor:pointer;display:grid;place-items:center;transition:.2s}
+  .search-x:hover{background:var(--copper);border-color:var(--copper)}
+  .search-box{display:flex;align-items:center;gap:14px;padding:22px 26px;border-bottom:1px solid var(--line)}
+  .search-box input{flex:1;border:none;outline:none;font-family:inherit;font-size:18px;color:var(--ink);background:transparent}
+  .search-results{max-height:52vh;overflow-y:auto}
+  .sr{display:block;padding:16px 26px;border-bottom:1px solid var(--line);cursor:pointer;transition:.16s}
+  .sr:hover{background:var(--sand)}
+  .sr .sr-t{font-weight:600;font-size:15.5px}
+  .sr .sr-c{font-family:'Oswald';font-size:11.5px;letter-spacing:.8px;text-transform:uppercase;color:var(--copper);margin-bottom:3px}
+  .sr .sr-d{color:var(--muted);font-size:13.5px;margin-top:3px}
+  .sr-empty{padding:30px 26px;color:var(--muted);text-align:center}
+  @media(max-width:640px){.search-inner{margin-top:0;height:100%}.search-results{max-height:calc(100% - 70px)}.search-x{top:10px;right:10px;color:var(--ink);border-color:var(--line)}}
+
+  /* MODAL */
+  .modal{position:fixed;inset:0;z-index:90;display:grid;place-items:center;padding:22px;background:rgba(20,17,13,.6);backdrop-filter:blur(5px);opacity:0;pointer-events:none;transition:.3s}
+  .modal.open{opacity:1;pointer-events:auto}
+  .modal-box{background:var(--white);max-width:620px;width:100%;max-height:88vh;overflow-y:auto;position:relative;transform:translateY(18px) scale(.98);transition:.32s}
+  .modal.open .modal-box{transform:none}
+  .modal-x{position:absolute;top:16px;right:16px;width:38px;height:38px;border:1px solid var(--line);background:var(--white);color:var(--ink);font-size:18px;cursor:pointer;display:grid;place-items:center;transition:.2s;z-index:3}
+  .modal-x:hover{background:var(--copper);color:#fff;border-color:var(--copper);transform:rotate(90deg)}
+  .modal-hd{padding:40px 40px 26px;border-bottom:1px solid var(--line);background:var(--sand)}
+  .modal-hd .mico{width:54px;height:54px;display:grid;place-items:center;background:var(--copper);color:#fff;margin-bottom:18px}
+  .modal-hd .mico svg{width:28px;height:28px;stroke:currentColor;fill:none;stroke-width:1.6}
+  .modal-hd .csec{font-family:'Oswald';font-size:12px;letter-spacing:1.3px;text-transform:uppercase;color:var(--muted)}
+  .modal-hd h3{font-size:28px;margin:5px 0 12px}.modal-hd p{color:var(--ink2);font-size:15px}
+  .modal-bd{padding:30px 40px 40px}
+  .mfacts{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:28px}
+  .mf{border:1px solid var(--line);padding:16px}.mf .v{font-family:'Oswald';font-size:23px;font-weight:600;color:var(--copper);line-height:1}
+  .mf .k{font-size:11.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;margin-top:6px;font-family:'Oswald'}
+  .modal-bd h4{font-family:'Oswald';text-transform:uppercase;letter-spacing:1px;font-size:14px;color:var(--copper);margin-bottom:12px}
+  .prod{list-style:none}.prod li{padding:14px 0;border-bottom:1px solid var(--line);color:var(--ink2);display:block}
+  .prod li:last-child{border-bottom:none}
+  .prod li .pt{font-weight:600;display:flex;gap:9px;align-items:baseline;font-size:15.5px}
+  .prod li .pt::before{content:"▸";color:var(--copper);flex-shrink:0}
+  .prod li .pd{color:var(--muted);font-size:13.5px;line-height:1.5;margin:3px 0 0 17px}
+
+  @media(max-width:1000px){
+    .menu,.nav-utils .lang,.nav-utils .icon-btn{display:none}
+    .burger{display:flex}.mobile-menu{display:block}
+    .comp-grid{grid-template-columns:repeat(2,1fr)}
+    .news-grid,.lead-grid,.grid3,.steps{grid-template-columns:1fr 1fr}
+    .foot-top{grid-template-columns:1fr 1fr}
+  }
+  @media(max-width:640px){
+    .news-grid,.comp-grid,.jp-grid,.ul-grid,.foot-top,.grid3,.grid2,.lead-grid,.steps,.cform,.contact-grid{grid-template-columns:1fr}
+    .modal-hd,.modal-bd{padding-left:24px;padding-right:24px}.mfacts{grid-template-columns:1fr 1fr}
+    section,.page-body{padding:54px 0}.topbar{display:none}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar"><div class="wrap">
+  <a data-route="#/jobs">Ажлын байр</a><span class="sep"></span>
+  <a data-route="#/procurement">Худалдан авалт</a><span class="sep"></span>
+  <a data-route="#/contact">Холбоо барих</a>
+</div></div>
+
+<nav>
+  <div class="wrap nav-in">
+    <a data-route="#/" class="logo"><span class="mark"><span>X</span></span>ХҮДЭР ГРУПП</a>
+    <ul class="menu">
+      <li><a data-route="#/" data-nav="home">Нүүр</a></li>
+      <li><a data-route="#/about" data-nav="about">Бидний тухай <span class="caret">▼</span></a>
+        <div class="dropdown">
+          <a data-route="#/about">Группийн танилцуулга</a>
+          <a data-route="#/about/values">Үнэт зүйлс, зарчим</a>
+          <a data-route="#/about/history">Бидний түүх</a>
+          <a data-route="#/about/leadership">Удирдлага</a>
+          <a data-route="#/about/shareholders">Хувьцаа эзэмшигчид</a>
+          <a data-route="#/about/ethics">Ёс зүйн дүрэм</a>
+        </div>
+      </li>
+      <li><a data-route="#/business" data-nav="business">Бизнесийн салбар</a></li>
+      <li><a data-route="#/esg/report" data-nav="esg">Тогтвортой хөгжил <span class="caret">▼</span></a>
+        <div class="dropdown">
+          <a data-route="#/esg/report">Тогтвортой хөгжлийн тайлан</a>
+          <a data-route="#/esg/principles">Баримтлах зарчим</a>
+          <a data-route="#/esg/projects">Онцлох төслүүд</a>
+        </div>
+      </li>
+      <li><a data-route="#/news" data-nav="news">Мэдээ мэдээлэл <span class="caret">▼</span></a>
+        <div class="dropdown">
+          <a data-route="#/news">Мэдээ</a>
+          <a data-route="#/news/faq">Түгээмэл асуулт, хариулт</a>
+        </div>
+      </li>
+    </ul>
+    <div class="nav-utils">
+      <button class="icon-btn" id="searchBtn" aria-label="Хайх"><svg viewBox="0 0 24 24" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.4-4.4"/></svg></button>
+      <a class="lang" id="langBtn">EN</a>
+      <div class="burger" id="burger"><span></span><span></span><span></span></div>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a data-route="#/">Нүүр</a>
+  <a data-route="#/about">Бидний тухай</a>
+  <a data-route="#/about/values" class="sub">Үнэт зүйлс, зарчим</a>
+  <a data-route="#/about/history" class="sub">Бидний түүх</a>
+  <a data-route="#/about/leadership" class="sub">Удирдлага</a>
+  <a data-route="#/about/shareholders" class="sub">Хувьцаа эзэмшигчид</a>
+  <a data-route="#/about/ethics" class="sub">Ёс зүйн дүрэм</a>
+  <a data-route="#/business">Бизнесийн салбар</a>
+  <a data-route="#/esg/report">Тогтвортой хөгжил</a>
+  <a data-route="#/esg/principles" class="sub">Баримтлах зарчим</a>
+  <a data-route="#/esg/projects" class="sub">Онцлох төслүүд</a>
+  <a data-route="#/news">Мэдээ мэдээлэл</a>
+  <a data-route="#/news/faq" class="sub">Түгээмэл асуулт</a>
+  <a data-route="#/jobs">Ажлын байр</a>
+  <a data-route="#/procurement">Худалдан авалт</a>
+  <a data-route="#/contact">Холбоо барих</a>
+</div>
+
+<!-- ============ HOME ============ -->
+<div id="home">
+  <div class="hero">
+    <div class="slides" id="slides"></div>
+    <div class="slide-arrows"><div class="wrap">
+      <button class="arrow" id="prev"><svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg></button>
+      <button class="arrow" id="next"><svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></button>
+    </div></div>
+    <div class="dots" id="dots"></div>
+  </div>
+
+  <section class="news-sec">
+    <div class="wrap">
+      <div class="sec-head"><h3><span class="bar"></span>Онцлох мэдээ</h3><a class="seeall" data-route="#/news">Бусад мэдээ →</a></div>
+      <div class="news-grid" id="newsGrid"></div>
+    </div>
+  </section>
+
+  <section class="companies">
+    <div class="wrap">
+      <div class="sec-head"><h3><span class="bar"></span>Компаниуд</h3><a class="seeall" data-route="#/business">Бүгдийг үзэх →</a></div>
+      <div class="comp-grid" id="compGrid"></div>
+    </div>
+  </section>
+
+  <section class="jp">
+    <div class="wrap jp-grid">
+      <div>
+        <h3>Нээлттэй ажлын байр <span class="count">159</span></h3>
+        <p class="lead">Группын охин компаниудын идэвхтэй зарлагдсан ажлын байрууд.</p>
+        <ul class="jlist" id="homeJobs"></ul>
+        <a class="seeall" data-route="#/jobs" style="margin-top:18px;display:inline-flex">Бүх ажлын байр →</a>
+      </div>
+      <div>
+        <h3>Идэвхтэй худалдан авалт <span class="count">8</span></h3>
+        <p class="lead">Нийлүүлэгчдэд зориулсан нээлттэй тендер, урилга.</p>
+        <ul class="jlist" id="homeProc"></ul>
+        <a class="seeall" data-route="#/procurement" style="margin-top:18px;display:inline-flex">Бүгдийг үзэх →</a>
+      </div>
+    </div>
+  </section>
+
+  <section style="background:var(--ink);color:#fff">
+    <div class="wrap">
+      <div class="sec-head"><h3 style="color:#fff"><span class="bar"></span>Тогтвортой хөгжил</h3><a class="seeall" data-route="#/esg/report" style="color:var(--copper-bright)">Тайлан унших →</a></div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#322d26;border:1px solid #322d26">
+        <div style="background:var(--ink);padding:34px 28px"><div style="font-family:'Oswald';font-size:44px;font-weight:700;color:var(--copper-bright);line-height:1">−42%</div><div style="color:#a9a293;margin-top:10px">Цэвэр усны хэрэглээг эргэлтийн системээр бууруулсан.</div></div>
+        <div style="background:var(--ink);padding:34px 28px"><div style="font-family:'Oswald';font-size:44px;font-weight:700;color:var(--copper-bright);line-height:1">1.2М</div><div style="color:#a9a293;margin-top:10px">Сүүлийн 5 жилд тарьсан мод.</div></div>
+        <div style="background:var(--ink);padding:34px 28px"><div style="font-family:'Oswald';font-size:44px;font-weight:700;color:var(--copper-bright);line-height:1">0</div><div style="color:#a9a293;margin-top:10px">Сүүлийн жилийн ноцтой ослын тоо.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ulinks">
+    <div class="wrap ul-grid">
+      <div>
+        <h4 style="font-family:'Oswald';text-transform:uppercase;letter-spacing:1px;font-size:20px;margin-bottom:18px">Хэрэгтэй холбоос</h4>
+        <div class="ul-list">
+          <a data-route="#/news/faq">Түгээмэл асуулт</a>
+          <a data-route="#/esg/report">Тогтвортой хөгжлийн тайлан</a>
+          <a data-route="#/about/ethics">Ёс зүйн дүрэм</a>
+          <a data-route="#/procurement">Нийлүүлэгчээр бүртгүүлэх</a>
+          <a data-route="#/contact">Санал, хүсэлт</a>
+        </div>
+      </div>
+      <div class="social">
+        <h4>Биднийг дагаарай</h4>
+        <div class="social-row">
+          <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M13 22v-8h2.7l.4-3H13V9.1c0-.9.3-1.5 1.6-1.5H16V5c-.3 0-1.2-.1-2.3-.1-2.3 0-3.7 1.4-3.7 3.9V11H7.5v3H10v8h3z"/></svg></a>
+          <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 1.2.1 1.8.3 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.2.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 1.2-.3 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.2.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.2-.1-1.8-.3-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8c.1-1.2.3-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2zm0 3.2A6.6 6.6 0 1012 18.6 6.6 6.6 0 0012 5.4zm0 10.9a4.3 4.3 0 110-8.6 4.3 4.3 0 010 8.6zM18.9 5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/></svg></a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M6.9 8H3.6v12h3.3V8zM5.2 3.4a1.9 1.9 0 100 3.8 1.9 1.9 0 000-3.8zM20.4 20v-6.6c0-3.5-1.9-5.2-4.4-5.2-2 0-2.9 1.1-3.4 1.9V8H9.3v12h3.3v-6.3c0-1.7.3-3.3 2.4-3.3 2 0 2.1 1.9 2.1 3.4V20h3.3z"/></svg></a>
+          <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M22 7.5c-.2-1.4-.8-2.4-2.3-2.6C17.6 4.5 12 4.5 12 4.5s-5.6 0-7.7.4C2.8 5.1 2.2 6.1 2 7.5 1.7 9 1.7 12 1.7 12s0 3 .3 4.5c.2 1.4.8 2.4 2.3 2.6 2.1.4 7.7.4 7.7.4s5.6 0 7.7-.4c1.5-.2 2.1-1.2 2.3-2.6.3-1.5.3-4.5.3-4.5s0-3-.3-4.5zM10 15V9l5.2 3L10 15z"/></svg></a>
+        </div>
+        <p style="margin-top:20px;color:var(--muted);font-size:14px">Улаанбаатар хот · info@khuder.mn · +976 7000 0000</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ SUBPAGE ============ -->
+<div id="subpage"></div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <span class="foot-logo">ХҮДЭР ГРУПП</span>
+        <p style="max-width:36ch;cursor:default">Уул уурхайн салбарт дэлхийн жишиг нэвтрүүлж, газрын баялгийг хариуцлагатайгаар ирээдүй хойч үедээ.</p>
+      </div>
+      <div><h5>Компани</h5><a data-route="#/about">Бидний тухай</a><a data-route="#/about/history">Бидний түүх</a><a data-route="#/about/leadership">Удирдлага</a><a data-route="#/esg/report">Тогтвортой хөгжил</a></div>
+      <div><h5>Бизнес</h5><a data-route="#/business">Бизнесийн салбар</a><a data-route="#/jobs">Ажлын байр</a><a data-route="#/procurement">Худалдан авалт</a><a data-route="#/news">Мэдээ</a></div>
+      <div><h5>Холбоо барих</h5><a data-route="#/contact">Санал, хүсэлт</a><p style="cursor:default">info@khuder.mn</p><p style="cursor:default">+976 7000 0000</p><p style="cursor:default">Улаанбаатар хот</p></div>
+    </div>
+    <div class="foot-bot">
+      <span>© 2026 Хүдэр Холдинг ХХК. Бүх эрх хуулиар хамгаалагдсан.</span>
+      <span><a data-route="#/terms">Ашиглалтын нөхцөл</a> · <a data-route="#/privacy">Нууцлалын бодлого</a> · <a data-route="#/contact">Холбоо барих</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- MODAL -->
+<div class="modal" id="modal">
+  <div class="modal-box">
+    <button class="modal-x" id="modalX">✕</button>
+    <div class="modal-hd">
+      <div class="mico"><svg id="mIco" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"></svg></div>
+      <div class="csec" id="mTag"></div><h3 id="mName"></h3><p id="mLong"></p>
+    </div>
+    <div class="modal-bd">
+      <div class="mfacts">
+        <div class="mf"><div class="v" id="mY"></div><div class="k">Байгуулсан</div></div>
+        <div class="mf"><div class="v" id="mEmp"></div><div class="k">Ажилтан</div></div>
+        <div class="mf"><div class="v" id="mLoc"></div><div class="k">Байршил</div></div>
+      </div>
+      <h4>Үндсэн чиглэл</h4><ul class="prod" id="mProd"></ul>
+    </div>
+  </div>
+</div>
+
+<!-- SEARCH OVERLAY -->
+<div class="search-ov" id="searchOv">
+  <div class="search-inner">
+    <button class="search-x" id="searchX" aria-label="Хаах">✕</button>
+    <div class="search-box">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#857f74" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.4-4.4"/></svg>
+      <input id="searchInput" type="text" placeholder="Хайх... (компани, мэдээ, хуудас)" autocomplete="off">
+    </div>
+    <div class="search-results" id="searchResults"></div>
+  </div>
+</div>
+
+<!-- INFO MODAL (news / jobs / procurement) -->
+<div class="modal" id="infoModal">
+  <div class="modal-box">
+    <button class="modal-x" id="infoX" aria-label="Хаах">✕</button>
+    <div class="modal-hd">
+      <div class="csec" id="iCat"></div>
+      <h3 id="iTitle"></h3>
+      <p id="iMeta" style="color:var(--copper);font-weight:600"></p>
+    </div>
+    <div class="modal-bd">
+      <div id="iBody" style="color:var(--ink2);font-size:15.5px"></div>
+      <button id="iCta" class="dlb" style="border:none;margin-top:24px;font-size:14px;padding:12px 24px">Холбогдох</button>
+    </div>
+  </div>
+</div>
+
+<script>
+const ic={coal:'<path d="M3 14l4-7 5 3 4-4 5 5v8H3z"/><circle cx="8" cy="16" r="1"/><circle cx="14" cy="15" r="1"/>',copper:'<path d="M12 2l8 4.5v9L12 20l-8-4.5v-9z"/><path d="M12 2v18M4 6.5l16 9M20 6.5l-16 9"/>',logi:'<rect x="1" y="6" width="13" height="10"/><path d="M14 9h4l3 3v4h-7z"/><circle cx="6" cy="18" r="2"/><circle cx="17" cy="18" r="2"/>',energy:'<path d="M13 2L4 14h6l-1 8 9-12h-6z"/>',build:'<path d="M3 21V8l9-5 9 5v13"/><path d="M9 21v-6h6v6M3 12l9 5 9-5"/>',explore:'<circle cx="11" cy="11" r="7"/><path d="M21 21l-4.5-4.5"/>',machine:'<circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/>',green:'<path d="M12 22V11M12 11c0-5 4-8 9-8 0 6-4 8-9 8zM12 14c0-3-3-6-8-6 0 4 3 6 8 6z"/>'};
+
+const subs=[
+ {ic:'coal',sec:'Олборлолт',name:'Хүдэр Коал',y:'2001',emp:'2,100',loc:'Өмнөговь',long:'Группын хамгийн том охин компани. Коксжих болон эрчим хүчний нүүрсний олборлолт, баяжуулалт, экспорт.',prod:[
+   {t:'Коксжих нүүрс — жилд 8 сая тонн',d:'Гадаад зах зээлд экспортолдог өндөр чанарын коксжих нүүрсний олборлолт, баяжуулалт.'},
+   {t:'Эрчим хүчний нүүрс — жилд 4 сая тонн',d:'Дотоодын цахилгаан станц, үйлдвэрүүдэд тогтмол найдвартай нийлүүлдэг.'},
+   {t:'Баяжуулсан нүүрсний экспорт',d:'Хилийн боомтоор дамжуулан Ази тивийн зах зээлд хүргэдэг.'},
+   {t:'Уурхайн нөхөн сэргээлт',d:'Олборлолт явуулсан талбайг үе шаттайгаар нөхөн сэргээдэг.'}]},
+ {ic:'copper',sec:'Олборлолт',name:'Хүдэр Коппер',y:'2006',emp:'1,450',loc:'Дорноговь',long:'Зэс, алтны хүдрийн хайгуул, олборлолт болон орчин үеийн баяжуулах үйлдвэрт боловсруулалт.',prod:[
+   {t:'Зэсийн баяжмал — жилд 320,000 тонн',d:'Өндөр агуулгатай зэсийн баяжмал үйлдвэрлэж экспортолдог.'},
+   {t:'Алтны баяжмал',d:'Зэстэй хамт олборлогдох алтыг баяжуулан ялгадаг.'},
+   {t:'Хүдрийн нөөцийн үнэлгээ',d:'Орд газрын нөөцийг олон улсын стандартаар тооцдог.'},
+   {t:'Геотехникийн судалгаа',d:'Уурхайн тогтвортой, аюулгүй ажиллагааг хангах судалгаа.'}]},
+ {ic:'logi',sec:'Логистик',name:'Хүдэр Лоджистикс',y:'2009',emp:'780',loc:'Улаанбаатар',long:'Уурхайгаас хилийн боомт хүртэлх авто, төмөр замын нэгдсэн тээвэр логистикийн сүлжээ.',prod:[
+   {t:'Авто замын ачаа тээвэр',d:'Хүнд даацын машинаар уурхайн бүтээгдэхүүнийг тээвэрлэдэг.'},
+   {t:'Төмөр замын тээвэр зохицуулалт',d:'Том хэмжээний ачааг төмөр замаар найдвартай хүргэдэг.'},
+   {t:'Хилийн боомтын логистик',d:'Гаалийн бүрдүүлэлт, боомтын үйл ажиллагааг зохицуулдаг.'},
+   {t:'Агуулах, нөөцийн менежмент',d:'Бараа материалын хадгалалт, түгээлтийг удирддаг.'}]},
+ {ic:'energy',sec:'Эрчим хүч',name:'Хүдэр Энержи',y:'2013',emp:'410',loc:'Өмнөговь',long:'Уурхайн эрчим хүчний хангамж, нар салхины сэргээгдэх эрчим хүчний төслүүд.',prod:[
+   {t:'Цахилгаан станцын ашиглалт',d:'Уурхайн үйлдвэрлэлийн цахилгаан хэрэгцээг хангадаг.'},
+   {t:'Сэргээгдэх эрчим хүч (нар, салхи)',d:'Нар, салхины станцаар цэвэр эрчим хүч үйлдвэрлэдэг.'},
+   {t:'Дулааны хангамж',d:'Уурхайн орчны барилга байгууламжийн дулаан.'},
+   {t:'Эрчим хүчний үр ашгийн шийдэл',d:'Эрчим хүчний хэрэглээг оновчтой болгох төслүүд.'}]},
+ {ic:'build',sec:'Барилга',name:'Хүдэр Констракшн',y:'2010',emp:'920',loc:'Улаанбаатар',long:'Уурхайн дэд бүтэц, зам, гүүр, үйлдвэрийн байгууламжийн иж бүрэн гүйцэтгэл.',prod:[
+   {t:'Уурхайн дэд бүтэц',d:'Уурхайн зам, талбай, тусгай байгууламжийн бүтээн байгуулалт.'},
+   {t:'Авто зам, гүүр',d:'Хүнд даацын тээвэрт зориулсан зам, гүүрийн барилга.'},
+   {t:'Үйлдвэрийн байгууламж',d:'Баяжуулах үйлдвэр, агуулах, аж ахуйн барилга.'},
+   {t:'Инженерийн зураг төсөл',d:'Төлөвлөлтөөс ашиглалт хүртэлх инженерийн шийдэл.'}]},
+ {ic:'explore',sec:'Геологи',name:'Хүдэр Эксплорейшн',y:'2004',emp:'260',loc:'Хээрийн анги',long:'Геологи хайгуул, өрөмдлөг, нөөцийн үнэлгээгээр группын ирээдүйн нөөцийг бүрдүүлэгч.',prod:[
+   {t:'Геологи хайгуулын өрөмдлөг',d:'Орчин үеийн өрөмдлөгийн аргаар нөөцийг тогтоодог.'},
+   {t:'Геофизикийн судалгаа',d:'Газрын гүний бүтцийг шинжлэх дэвшилтэт судалгаа.'},
+   {t:'Нөөцийн тооцоо, үнэлгээ',d:'Илэрсэн ордын нөөцийг олон улсын ангиллаар үнэлдэг.'},
+   {t:'Тоон зураглал',d:'Хайгуулын мэдээллийг тоон загвар, газрын зураг болгодог.'}]},
+ {ic:'machine',sec:'Техник',name:'Хүдэр Машинери',y:'2015',emp:'540',loc:'Улаанбаатар',long:'Хүнд даацын уул уурхайн техник, тоног төхөөрөмжийн нийлүүлэлт, засвар, түрээс.',prod:[
+   {t:'Хүнд даацын машин нийлүүлэлт',d:'Дэлхийн тэргүүлэх брэндийн уул уурхайн техник.'},
+   {t:'Засвар, техник үйлчилгээ',d:'Тоног төхөөрөмжийн төлөвлөгөөт болон яаралтай засвар.'},
+   {t:'Сэлбэг хэрэгсэл',d:'Албан ёсны эх сэлбэгийн нийлүүлэлт, агуулах.'},
+   {t:'Техникийн түрээс',d:'Богино, урт хугацааны уян хатан түрээсийн нөхцөл.'}]},
+ {ic:'green',sec:'Байгаль орчин',name:'Хүдэр Грийн',y:'2018',emp:'180',loc:'Бүх уурхай',long:'Газрын биологийн нөхөн сэргээлт, ойжуулалт, байгаль орчны тасралтгүй мониторинг.',prod:[
+   {t:'Газрын биологийн нөхөн сэргээлт',d:'Олборлолтын дараах талбайг ургамалжуулан сэргээдэг.'},
+   {t:'Ойжуулалт — 1.2 сая мод',d:'Орон нутагтай хамтран салхин хаалт, ой байгуулдаг.'},
+   {t:'Усны чанарын мониторинг',d:'Гадаргын болон гүний усны байнгын хяналт, шинжилгээ.'},
+   {t:'Экологийн нөлөөллийн үнэлгээ',d:'Төслийн байгаль орчны нөлөөллийг үнэлж, бууруулдаг.'}]}
+];
+const news=[
+ {d:'2026.05.28',t:'Хүдэр Энержи нарны цахилгаан станцаа ашиглалтад оруулав',p:'150 кВт хүчин чадалтай станц жилд 240 МВт.цаг цэвэр эрчим хүч үйлдвэрлэнэ.'},
+ {d:'2026.05.05',t:'"Хүдэр Internship 2026" хөтөлбөрт 66 оюутан шалгарлаа',p:'Гурван сарын турш цалинтай дадлага хийж, бодит ажлын туршлага хуримтлуулна.'},
+ {d:'2026.04.09',t:'Группын 2024 оны тогтвортой хөгжлийн тайлан нийтлэгдлээ',p:'Байгаль орчин, нийгэм, засаглалын жилийн үр дүнг танилцуулж байна.'},
+ {d:'2026.03.21',t:'Хүдэр Коппер шинэ баяжуулах үйлдвэрээ нээв',p:'Жилд 12 сая тонн хүдэр боловсруулах хүчин чадалтай орчин үеийн үйлдвэр.'},
+ {d:'2026.02.10',t:'Орон нутгийн 200 залууд тэтгэлэг олголоо',p:'Уул уурхайн чиглэлээр мэргэшсэн боловсон хүчин бэлтгэх хөтөлбөр.'},
+ {d:'2026.01.15',t:'Группын экспорт өмнөх оноос 18% өслөө',p:'Нүүрс, зэсийн баяжмалын экспорт шинэ дээд хэмжээнд хүрэв.'}
+];
+const jobs=[
+ {t:'Уурхайн инженер',c:'Хүдэр Коал · Өмнөговь'},{t:'Хүний нөөцийн ажилтан',c:'Хүдэр Холдинг · Улаанбаатар'},
+ {t:'Геологич',c:'Хүдэр Эксплорейшн · Хээрийн анги'},{t:'Хүнд машины оператор',c:'Хүдэр Машинери · Дорноговь'},
+ {t:'Санхүүгийн шинжээч',c:'Хүдэр Холдинг · Улаанбаатар'},{t:'Байгаль орчны мэргэжилтэн',c:'Хүдэр Грийн · Бүх уурхай'},
+ {t:'Логистикийн зохицуулагч',c:'Хүдэр Лоджистикс · Улаанбаатар'},{t:'Цахилгааны инженер',c:'Хүдэр Энержи · Өмнөговь'}
+];
+const proc=[
+ {t:'Уурхайн засварын сэрээт өргөгч нийлүүлэх',c:'Хаах: 2026-06-03'},{t:'LED дэлгэц нийлүүлэх, суурилуулах',c:'Хаах: 2026-06-03'},
+ {t:'Сэргээгдэх эрчим хүчний тоног төхөөрөмж',c:'Хаах: 2026-06-05'},{t:'Уурхайн хувцас, хамгаалалтын хэрэгсэл',c:'Хаах: 2026-06-08'},
+ {t:'Аж ахуйн зориулалтын дизель түлш',c:'Хаах: 2026-06-10'}
+];
+const projects=[
+ {ic:'coal',k:'Онцлох төсөл',t:'Тавантолгойн уурхайн өргөтгөл',d:'Жилийн олборлолтын хүчин чадлыг 30%-иар нэмэгдүүлэх дэд бүтцийн төсөл.',bg:'#241a10'},
+ {ic:'green',k:'Тогтвортой хөгжил',t:'Говийн ойн зурваст төсөл',d:'Цөлжилтийг бууруулах зорилгоор 1.2 сая мод тарьж, салхин хаалт байгуулав.',bg:'#15201a'},
+ {ic:'energy',k:'Эрчим хүч',t:'150 кВт нарны цахилгаан станц',d:'Жилд 240 МВт.цаг цэвэр эрчим хүч үйлдвэрлэх нарны станц.',bg:'#1d1b24'},
+ {ic:'explore',k:'Боловсон хүчин',t:'Хүдэр Internship хөтөлбөр',d:'Цалинтай дадлагын хөтөлбөрт энэ жил 66 оюутан шалгарлаа.',bg:'#241016'}
+];
+
+// ===== Home renders =====
+document.getElementById('compGrid').innerHTML=subs.map((s,i)=>`<div class="comp" data-comp="${i}"><div class="cico"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">${ic[s.ic]}</svg></div><div class="csec">${s.sec}</div><h4>${s.name}</h4></div>`).join('');
+document.getElementById('newsGrid').innerHTML=news.slice(0,3).map((n,i)=>`<div class="ncard" data-news="${i}"><div class="nimg"><div class="ph"><svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="#c3b8a4" stroke-width="1.4"><path d="M3 14l4-7 5 3 4-4 5 5v8H3z"/></svg></div><span class="date">${n.d}</span></div><div class="nbody"><h4>${n.t}</h4><p>${n.p}</p><span class="read">Дэлгэрэнгүй →</span></div></div>`).join('');
+const jli=(item,arr)=>`<li data-list="${arr}" data-idx="${item._i}"><div><div class="jt">${item.t}</div><div class="jm">${item.c}</div></div><span class="jarr">→</span></li>`;
+jobs.forEach((j,i)=>j._i=i);proc.forEach((p,i)=>p._i=i);
+document.getElementById('homeJobs').innerHTML=jobs.slice(0,4).map(j=>jli(j,'jobs')).join('');
+document.getElementById('homeProc').innerHTML=proc.slice(0,3).map(p=>jli(p,'proc')).join('');
+
+// ===== Slider =====
+const slidesEl=document.getElementById('slides'),dotsEl=document.getElementById('dots');
+slidesEl.innerHTML=projects.map((s,i)=>`<div class="slide ${i===0?'active':''}"><div class="sbg" style="background:radial-gradient(120% 100% at 80% 0%, ${s.bg}, #0f0d0b)"></div><div class="wrap slide-content"><span class="kicker">${s.k}</span><h2>${s.t}</h2><p>${s.d}</p><a class="more" data-route="#/esg/projects">Дэлгэрэнгүй →</a></div></div>`).join('');
+dotsEl.innerHTML=`<div class="wrap">${projects.map((s,i)=>`<button class="dot ${i===0?'active':''}" data-i="${i}"></button>`).join('')}</div>`;
+let cur=0;const N=projects.length;const sEls=[...document.querySelectorAll('.slide')],dEls=[...document.querySelectorAll('.dot')];
+function go(n){cur=(n+N)%N;sEls.forEach((e,i)=>e.classList.toggle('active',i===cur));dEls.forEach((e,i)=>e.classList.toggle('active',i===cur));}
+document.getElementById('next').onclick=()=>{go(cur+1);rs();};document.getElementById('prev').onclick=()=>{go(cur-1);rs();};
+dEls.forEach(d=>d.onclick=()=>{go(+d.dataset.i);rs();});
+let timer=setInterval(()=>go(cur+1),6000);function rs(){clearInterval(timer);timer=setInterval(()=>go(cur+1),6000);}
+
+// ===== Modal =====
+const modal=document.getElementById('modal');
+function openComp(i){const s=subs[i];mIco.innerHTML=ic[s.ic];mTag.textContent=s.sec;mName.textContent=s.name;mLong.textContent=s.long;mY.textContent=s.y;mEmp.textContent=s.emp;mLoc.textContent=s.loc;mProd.innerHTML=s.prod.map(p=>`<li><div class="pt">${p.t}</div><div class="pd">${p.d}</div></li>`).join('');modal.classList.add('open');document.body.style.overflow='hidden';}
+function closeModal(){modal.classList.remove('open');document.body.style.overflow='';}
+document.getElementById('modalX').onclick=closeModal;modal.onclick=e=>{if(e.target===modal)closeModal();};
+function bindComp(scope){scope.querySelectorAll('[data-comp]').forEach(c=>c.onclick=e=>{e.preventDefault();location.hash='#/business/'+c.dataset.comp;});}
+bindComp(document);
+
+// ===== Mobile menu =====
+const burger=document.getElementById('burger'),mm=document.getElementById('mobileMenu');
+function closeMM(){burger.classList.remove('open');mm.classList.remove('open');document.body.style.overflow='';}
+burger.onclick=()=>{const o=burger.classList.toggle('open');mm.classList.toggle('open',o);document.body.style.overflow=o?'hidden':'';};
+addEventListener('keydown',e=>{if(e.key==='Escape'){closeModal();closeMM();closeSearch();closeInfo();}});
+
+// ===== Search =====
+const searchIndex=[
+ ...subs.map((s,i)=>({c:'Компани',t:s.name,d:s.long,act:()=>{location.hash='#/business/'+i;}})),
+ ...news.map(n=>({c:'Мэдээ',t:n.t,d:n.p,act:()=>{location.hash='#/news';}})),
+ ...jobs.map(j=>({c:'Ажлын байр',t:j.t,d:j.c,act:()=>{location.hash='#/jobs';}})),
+ ...proc.map(p=>({c:'Худалдан авалт',t:p.t,d:p.c,act:()=>{location.hash='#/procurement';}})),
+ {c:'Хуудас',t:'Бидний тухай',d:'Группийн танилцуулга',act:()=>location.hash='#/about'},
+ {c:'Хуудас',t:'Бидний түүх',d:'1998 оноос өнөөг хүртэл',act:()=>location.hash='#/about/history'},
+ {c:'Хуудас',t:'Удирдлага',d:'Группын манлайлал',act:()=>location.hash='#/about/leadership'},
+ {c:'Хуудас',t:'Үнэт зүйлс, зарчим',d:'Эрхэм зорилго, зарчмууд',act:()=>location.hash='#/about/values'},
+ {c:'Хуудас',t:'Хувьцаа эзэмшигчид',d:'Эзэмшлийн бүтэц',act:()=>location.hash='#/about/shareholders'},
+ {c:'Хуудас',t:'Ёс зүйн дүрэм',d:'Ёс суртахууны хэм хэмжээ',act:()=>location.hash='#/about/ethics'},
+ {c:'Хуудас',t:'Тогтвортой хөгжлийн тайлан',d:'ESG тайлан, татах',act:()=>location.hash='#/esg/report'},
+ {c:'Хуудас',t:'Баримтлах зарчим',d:'Тогтвортой хөгжлийн бодлого',act:()=>location.hash='#/esg/principles'},
+ {c:'Хуудас',t:'Онцлох төслүүд',d:'Тэргүүлэх төслүүд',act:()=>location.hash='#/esg/projects'},
+ {c:'Хуудас',t:'Түгээмэл асуулт',d:'Асуулт, хариулт',act:()=>location.hash='#/news/faq'},
+ {c:'Хуудас',t:'Холбоо барих',d:'Хаяг, утас, маягт',act:()=>location.hash='#/contact'},
+ {c:'Хуудас',t:'Нууцлалын бодлого',d:'Хувийн мэдээллийн хамгаалалт',act:()=>location.hash='#/privacy'},
+ {c:'Хуудас',t:'Ашиглалтын нөхцөл',d:'Сайт ашиглах нөхцөл',act:()=>location.hash='#/terms'}
+];
+const searchOv=document.getElementById('searchOv'),searchInput=document.getElementById('searchInput'),searchResults=document.getElementById('searchResults');
+function openSearch(){searchOv.classList.add('open');document.body.style.overflow='hidden';setTimeout(()=>searchInput.focus(),80);renderSearch('');}
+function closeSearch(){searchOv.classList.remove('open');document.body.style.overflow='';searchInput.value='';}
+function renderSearch(q){
+  q=q.trim().toLowerCase();
+  let list=searchIndex;
+  if(q)list=searchIndex.filter(x=>(x.t+' '+x.d+' '+x.c).toLowerCase().includes(q));
+  if(!list.length){searchResults.innerHTML='<div class="sr-empty">Илэрц олдсонгүй.</div>';return;}
+  searchResults.innerHTML=list.slice(0,20).map((x,i)=>`<div class="sr" data-si="${searchIndex.indexOf(x)}"><div class="sr-c">${x.c}</div><div class="sr-t">${x.t}</div><div class="sr-d">${x.d}</div></div>`).join('');
+  searchResults.querySelectorAll('.sr').forEach(el=>el.onclick=()=>{const x=searchIndex[+el.dataset.si];closeSearch();x.act();});
+}
+document.getElementById('searchBtn').onclick=openSearch;
+document.getElementById('searchX').onclick=closeSearch;
+searchOv.onclick=e=>{if(e.target===searchOv)closeSearch();};
+searchInput.oninput=e=>renderSearch(e.target.value);
+
+// ===== Language toggle (demo) =====
+let lang='MN';
+document.getElementById('langBtn').onclick=()=>{
+  lang=lang==='MN'?'EN':'MN';
+  document.getElementById('langBtn').textContent=lang==='MN'?'EN':'MN';
+  alert(lang==='MN'?'Монгол хэл идэвхтэй болсон.':'English version coming soon — энэ жишээ загварт зөвхөн товчны үйлдлийг харуулав.');
+};
+
+// ===== Info modal (news / jobs / procurement) =====
+const infoModal=document.getElementById('infoModal');
+let infoCtaRoute='#/contact';
+function openInfo(o){
+  document.getElementById('iCat').textContent=o.cat;
+  document.getElementById('iTitle').textContent=o.title;
+  document.getElementById('iMeta').textContent=o.meta||'';
+  document.getElementById('iBody').innerHTML=o.body;
+  const cta=document.getElementById('iCta');
+  cta.textContent=o.ctaLabel;infoCtaRoute=o.ctaRoute;
+  infoModal.classList.add('open');document.body.style.overflow='hidden';
+}
+function closeInfo(){infoModal.classList.remove('open');document.body.style.overflow='';}
+document.getElementById('infoX').onclick=closeInfo;
+infoModal.onclick=e=>{if(e.target===infoModal)closeInfo();};
+document.getElementById('iCta').onclick=()=>{closeInfo();location.hash=infoCtaRoute;};
+
+function openNews(i){const n=news[i];openInfo({cat:'Мэдээ · '+n.d,title:n.t,meta:'',
+  body:`<p style="margin-bottom:14px">${n.p}</p><p style="color:var(--muted)">Дэлгэрэнгүй мэдээллийг Группын хэвлэл, мэдээллийн албанаас авах боломжтой. Энэхүү мэдээ нь Хүдэр Группын олон нийтэд нээлттэй мэдээллийн нэг хэсэг юм.</p>`,
+  ctaLabel:'Бусад мэдээ',ctaRoute:'#/news'});}
+function openJob(i){const j=jobs[i];openInfo({cat:'Нээлттэй ажлын байр',title:j.t,meta:j.c,
+  body:`<p style="margin-bottom:14px">Хүдэр Группын ${j.c.split('·')[0].trim()} нэгжид дээрх албан тушаалд ажиллах хүнийг сонгон шалгаруулж байна.</p>
+  <h4 style="font-family:'Oswald';text-transform:uppercase;letter-spacing:1px;font-size:14px;color:var(--copper);margin:10px 0 8px">Тавигдах шаардлага</h4>
+  <ul class="prod"><li><div class="pt">Мэргэжлийн боловсрол, туршлага</div></li><li><div class="pt">Багаар ажиллах чадвар</div></li><li><div class="pt">Аюулгүй ажиллагааны зарчмыг баримтлах</div></li></ul>`,
+  ctaLabel:'Анкет илгээх',ctaRoute:'#/contact'});}
+function openProc(i){const p=proc[i];openInfo({cat:'Идэвхтэй худалдан авалт',title:p.t,meta:p.c,
+  body:`<p style="margin-bottom:14px">Энэхүү худалдан авалтад оролцох нийлүүлэгчид материалаа заасан хугацаанд багтаан ирүүлнэ үү.</p>
+  <p style="color:var(--muted)">Тендерийн баримт бичиг, шаардлагын талаар Худалдан авалтын албатай холбогдоно уу. Шударга, ил тод сонгон шалгаруулалт явагдана.</p>`,
+  ctaLabel:'Нийлүүлэгчээр бүртгүүлэх',ctaRoute:'#/contact'});}
+
+// delegated clicks for news/job/proc
+document.addEventListener('click',e=>{
+  const nw=e.target.closest('[data-news]');if(nw){openNews(+nw.dataset.news);return;}
+  const li=e.target.closest('[data-list]');if(li){li.dataset.list==='jobs'?openJob(+li.dataset.idx):openProc(+li.dataset.idx);return;}
+});
+
+// ===== PAGES =====
+const compCards=()=>`<div class="comp-grid">${subs.map((s,i)=>`<div class="comp" data-comp="${i}"><div class="cico"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">${ic[s.ic]}</svg></div><div class="csec">${s.sec}</div><h4>${s.name}</h4></div>`).join('')}</div>`;
+const values=[['Аюулгүй байдал','Хүний амь нас, эрүүл мэнд бидний бүх шийдвэрийн төвд байна.'],['Хариуцлага','Байгаль орчин, орон нутаг, хувьцаа эзэмшигчдийн өмнө хүлээсэн үүрэг.'],['Ил тод байдал','Олон улсын стандартын дагуу ил тод тайлагнал, засаглал.'],['Шударга ёс','Бүх түнш, ажилтантай шударга, ёс зүйтэй харилцана.'],['Тогтвортой хөгжил','Өнөөдрийн хэрэгцээг хойч үеийн боломжийг хохироохгүйгээр хангана.'],['Инноваци','Технологийн дэвшилд тулгуурласан үр ашигтай олборлолт.']];
+const timeline=[['1998','Үүсгэн байгуулагдсан','Хүдэр Групп анхны нүүрсний лицензтэйгээр үйл ажиллагаагаа эхлүүлэв.'],['2004','Хайгуулын нэгж','Хүдэр Эксплорейшн байгуулагдаж, нөөцийн суурь өргөжив.'],['2009','Логистикийн сүлжээ','Хүдэр Лоджистикс байгуулагдан экспортын гинжин хэлхээ бүрэн болов.'],['2015','Олон улсын стандарт','ISO чанар, аюулгүй байдлын стандартыг нэвтрүүлэв.'],['2018','Ногоон шилжилт','Хүдэр Грийн байгуулагдаж, нөхөн сэргээлтийг тэргүүлэх чиглэл болгов.'],['2026','Дэлхийн жишиг','8 охин компанитай, 6,400 ажилтантай тэргүүлэгч холдинг.']];
+const leaders=[['Б. Болд','Удирдах зөвлөлийн дарга','Группыг 25 жил тэргүүлж, олон улсын зах зээлд гаргасан.'],['С. Сарантуяа','Гүйцэтгэх захирал','Стратеги, санхүүгийн удирдлагын 20 жилийн туршлагатай.'],['Г. Ганбаатар','Үйл ажиллагаа хариуцсан захирал','Уул уурхайн инженер, томоохон төслүүдийг удирдсан.'],['Д. Дэлгэрмаа','Тогтвортой хөгжил хариуцсан захирал','ESG, байгаль орчны менежментийн чиглэлээр мэргэшсэн.'],['Т. Төгөлдөр','Хүний нөөцийн захирал','Байгууллагын соёл, авьяасын хөгжлийг хариуцдаг.'],['Н. Наранбаатар','Санхүүгийн захирал','Корпорацийн санхүү, хөрөнгө оруулалтын мэргэжилтэн.']];
+const faqs=[['Хүдэр Групп ямар чиглэлээр үйл ажиллагаа явуулдаг вэ?','Нүүрс, зэс, алтны олборлолтоос эхлээд хайгуул, тээвэр, эрчим хүч, барилга, байгаль орчны нөхөн сэргээлт хүртэлх бүрэн гинжин хэлхээг 8 охин компанийн хэлбэрээр явуулдаг.'],['Хэрхэн ажилд орох вэ?','Нээлттэй ажлын байр хэсгээс сонирхсон байрандаа цахимаар анкет илгээж, сонгон шалгаруулалтын үе шатанд оролцоно.'],['Нийлүүлэгчээр хэрхэн бүртгүүлэх вэ?','Худалдан авалт хэсгийн "Нийлүүлэгчээр бүртгүүлэх" хэсгээр дамжуулан байгууллагын мэдээллээ бүртгүүлнэ.'],['Тогтвортой хөгжлийн тайланг хаанаас үзэх вэ?','Тогтвортой хөгжил → Тайлан хэсгээс жил бүрийн тайланг татаж авах боломжтой.'],['Орон нутгийн хөгжилд ямар хувь нэмэр оруулдаг вэ?','Орон нутгийн хөгжлийн сан, тэтгэлэг, дэд бүтэц, ажлын байрны хөтөлбөрөөр дамжуулан тогтмол хувь нэмэр оруулдаг.']];
+
+const pages={
+ 'about':{nav:'about',bc:[['Нүүр','#/'],['Бидний тухай']],title:'Группийн танилцуулга',sub:'Уул уурхайн салбарт дэлхийн жишиг нэвтрүүлэхийг эрхэмлэдэг нэгдсэн холдинг.',
+   body:`<div class="prose"><p><b>Хүдэр Групп</b> нь 1998 онд үүсгэн байгуулагдсан, Монгол Улсын уул уурхайн салбарын тэргүүлэгч нэгдсэн холдинг компани юм.</p><p>Бид зөвхөн олборлолтоор зогсохгүй — хайгуул, тээвэр логистик, эрчим хүч, барилга, тоног төхөөрөмж, байгаль орчны нөхөн сэргээлт хүртэлх бүрэн гинжин хэлхээг 8 охин компаниараа дамжуулан хариуцлагатайгаар удирддаг.</p><p>Энэхүү нэгдсэн бүтэц нь бүтээгдэхүүний чанар, аюулгүй байдал, тогтвортой хөгжлийн стандартыг нэг дор хадгалах боломжийг бидэнд олгодог.</p></div>
+   <div class="grid3" style="margin-top:36px"><div class="card"><div class="vnum">28</div><h4>Олборлолтын жил</h4></div><div class="card"><div class="vnum">8</div><h4>Охин компани</h4></div><div class="card"><div class="vnum">6,400</div><h4>Ажиллагсад</h4></div></div>`},
+ 'about/values':{nav:'about',bc:[['Нүүр','#/'],['Бидний тухай','#/about'],['Үнэт зүйлс']],title:'Үнэт зүйлс, баримтлах зарчим',sub:'Бидний өдөр тутмын шийдвэр, үйл ажиллагааг чиглүүлэгч зарчмууд.',
+   body:`<div class="prose"><h3>Эрхэм зорилго</h3><p>Уул уурхайн салбарт дэлхийн жишиг нэвтрүүлж, газрын баялгийг хариуцлагатайгаар ашиглан, орон нутаг, улс орны хөгжилд тогтвортой хувь нэмэр оруулах.</p></div>
+   <div class="grid3" style="margin-top:30px">${values.map(v=>`<div class="card"><h4>${v[0]}</h4><p>${v[1]}</p></div>`).join('')}</div>`},
+ 'about/history':{nav:'about',bc:[['Нүүр','#/'],['Бидний тухай','#/about'],['Бидний түүх']],title:'Бидний түүх',sub:'1998 оноос өнөөг хүртэлх замнал.',
+   body:`<div class="tl">${timeline.map(t=>`<div class="tli"><div class="ty">${t[0]}</div><div class="tt">${t[1]}</div><p>${t[2]}</p></div>`).join('')}</div>`},
+ 'about/leadership':{nav:'about',bc:[['Нүүр','#/'],['Бидний тухай','#/about'],['Удирдлага']],title:'Удирдлага',sub:'Группыг чиглүүлэгч манлайлал. (Нэр, фото нь жишээ загвар)',
+   body:`<div class="lead-grid">${leaders.map(l=>`<div class="leader"><div class="lph"><svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#b3a68d" stroke-width="1.3"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg></div><div class="lb"><h4>${l[0]}</h4><div class="lr">${l[1]}</div><p>${l[2]}</p></div></div>`).join('')}</div>`},
+ 'about/shareholders':{nav:'about',bc:[['Нүүр','#/'],['Бидний тухай','#/about'],['Хувьцаа эзэмшигчид']],title:'Хувьцаа эзэмшигчид',sub:'Эзэмшлийн бүтэц, засаглал.',
+   body:`<div class="prose"><p>Хүдэр Холдинг ХХК нь ил тод засаглалын зарчмыг баримталдаг бөгөөд эзэмшлийн бүтэц нь дараах байдалтай байна.</p></div>
+   <table class="ktable" style="margin-top:24px"><thead><tr><th>Хувьцаа эзэмшигч</th><th>Төрөл</th><th>Эзэмшил</th></tr></thead><tbody>
+   <tr><td>Үүсгэн байгуулагчид</td><td>Хувийн</td><td class="pct">54%</td></tr>
+   <tr><td>Институцийн хөрөнгө оруулагчид</td><td>Стратеги</td><td class="pct">28%</td></tr>
+   <tr><td>Олон нийтийн санал</td><td>Чөлөөт</td><td class="pct">12%</td></tr>
+   <tr><td>Ажилтны хувьцааны хөтөлбөр</td><td>Дотоод</td><td class="pct">6%</td></tr></tbody></table>`},
+ 'about/ethics':{nav:'about',bc:[['Нүүр','#/'],['Бидний тухай','#/about'],['Ёс зүйн дүрэм']],title:'Ёс зүйн дүрэм',sub:'Бид шударга, ил тод, хариуцлагатай үйл ажиллагааг эрхэмлэдэг.',
+   body:`<div class="prose"><p>Ёс зүйн дүрэм нь Группын бүх ажилтан, түнш, нийлүүлэгчид мөрдөх ёс суртахууны хэм хэмжээг тогтоодог.</p></div>
+   <ul class="prod" style="max-width:780px;margin-top:18px"><li>Авлига, ашиг сонирхлын зөрчлийг үл тэвчих</li><li>Шударга өрсөлдөөн, ил тод худалдан авалт</li><li>Хүний эрх, хөдөлмөрийн аюулгүй байдлыг хүндэтгэх</li><li>Байгаль орчныг хамгаалах үүрэг</li><li>Нууцлал, мэдээллийн аюулгүй байдал</li></ul>
+   <div class="dl" style="margin-top:26px"><div><b>Ёс зүйн дүрэм 2026</b><div style="color:var(--muted);font-size:13px">PDF · 1.4 МБ</div></div><span class="dlb" onclick="alert('Жишээ файл — бодит баримт бичгийг энд холбоно.')">Татах</span></div>
+   <div class="dl"><div><b>Спийк Аут — гомдол мэдээлэх суваг</b><div style="color:var(--muted);font-size:13px">Нэрээ нууцлан мэдээлэх боломжтой</div></div><span class="dlb" data-route="#/contact">Мэдээлэх</span></div>`},
+ 'business':{nav:'business',bc:[['Нүүр','#/'],['Бизнесийн салбар']],title:'Бизнесийн салбар',sub:'Группын 8 охин компани. Дэлгэрэнгүй мэдээлэл авах бол компани дээрээ дарна уу.',
+   body:compCards()},
+ 'esg/report':{nav:'esg',bc:[['Нүүр','#/'],['Тогтвортой хөгжил'],['Тайлан']],title:'Тогтвортой хөгжлийн тайлан',sub:'Байгаль орчин, нийгэм, засаглалын жил бүрийн тайлан.',
+   body:`<div class="grid3" style="margin-bottom:34px"><div class="card"><div class="vnum">−42%</div><h4>Усны хэрэглээ</h4><p>Эргэлтийн усны системээр.</p></div><div class="card"><div class="vnum">1.2М</div><h4>Тарьсан мод</h4><p>Сүүлийн 5 жилд.</p></div><div class="card"><div class="vnum">0</div><h4>Ноцтой осол</h4><p>Сүүлийн санхүүгийн жилд.</p></div></div>
+   <h3 style="text-transform:uppercase;letter-spacing:.6px;font-size:22px;margin-bottom:16px"><span class="barx"></span>Тайлан татах</h3>
+   ${['2024','2023','2022'].map(y=>`<div class="dl"><div><b>Тогтвортой хөгжлийн тайлан ${y}</b><div style="color:var(--muted);font-size:13px">PDF · ил тод тайлагнал</div></div><span class="dlb" onclick="alert('Жишээ файл — бодит тайланг энд холбоно.')">Татах</span></div>`).join('')}`},
+ 'esg/principles':{nav:'esg',bc:[['Нүүр','#/'],['Тогтвортой хөгжил'],['Баримтлах зарчим']],title:'Баримтлах зарчим',sub:'Тогтвортой хөгжлийн бодлогын үндсэн чиглэлүүд.',
+   body:`<div class="grid2">${[['Байгаль орчин','Усны менежмент, нөхөн сэргээлт, утаа ялгаралт бууруулах зорилт.'],['Нийгэм','Орон нутгийн хөгжил, аюулгүй ажлын байр, боловсролын дэмжлэг.'],['Засаглал','Ил тод тайлагнал, ёс зүй, эрсдэлийн удирдлага.'],['Цаг уурын өөрчлөлт','2040 он гэхэд нүүрстөрөгчийн саармагжуулалтад хүрэх төлөвлөгөө.']].map(v=>`<div class="card"><h4>${v[0]}</h4><p>${v[1]}</p></div>`).join('')}</div>`},
+ 'esg/projects':{nav:'esg',bc:[['Нүүр','#/'],['Тогтвортой хөгжил'],['Онцлох төслүүд']],title:'Онцлох төслүүд',sub:'Группын тэргүүлэх төсөл, хөтөлбөрүүд.',
+   body:`<div class="grid2">${projects.map(p=>`<div class="card"><div class="cico" style="width:48px;height:48px;display:grid;place-items:center;background:var(--copper);color:#fff;margin-bottom:16px"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">${ic[p.ic]}</svg></div><div class="csec" style="font-family:'Oswald';font-size:11.5px;letter-spacing:1.3px;text-transform:uppercase;color:var(--muted)">${p.k}</div><h4 style="margin:4px 0 10px">${p.t}</h4><p>${p.d}</p></div>`).join('')}</div>`},
+ 'news':{nav:'news',bc:[['Нүүр','#/'],['Мэдээ мэдээлэл'],['Мэдээ']],title:'Мэдээ',sub:'Группын сүүлийн үеийн мэдээ, мэдээлэл.',
+   body:`<div class="news-grid">${news.map((n,i)=>`<div class="ncard" data-news="${i}"><div class="nimg"><div class="ph"><svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="#c3b8a4" stroke-width="1.4"><path d="M3 14l4-7 5 3 4-4 5 5v8H3z"/></svg></div><span class="date">${n.d}</span></div><div class="nbody"><h4>${n.t}</h4><p>${n.p}</p><span class="read">Дэлгэрэнгүй →</span></div></div>`).join('')}</div>`},
+ 'news/faq':{nav:'news',bc:[['Нүүр','#/'],['Мэдээ мэдээлэл'],['Түгээмэл асуулт']],title:'Түгээмэл асуулт, хариулт',sub:'Хамгийн их асуудаг асуултуудын хариулт.',
+   body:`<div class="faq">${faqs.map(f=>`<div class="item"><div class="q">${f[0]}<span class="pm">+</span></div><div class="a">${f[1]}</div></div>`).join('')}</div>`},
+ 'jobs':{nav:null,bc:[['Нүүр','#/'],['Ажлын байр']],title:'Нээлттэй ажлын байр',sub:'Хүдэр Группд хамтдаа өсөж хөгжье. Нийт 159 нээлттэй байр.',
+   body:`<h3 style="text-transform:uppercase;letter-spacing:.6px;font-size:22px;margin-bottom:18px"><span class="barx"></span>Сонгон шалгаруулалтын үе шат</h3>
+   <div class="steps" style="margin-bottom:44px">${[['Анкет','Цахим анкетаа илгээнэ'],['Тест','Чадварын тест бөглөнө'],['Ярилцлага','Мэргэжлийн ярилцлагад орно'],['Санал','Ажлын санал хүлээн авна']].map(s=>`<div class="step"><h4>${s[0]}</h4><p>${s[1]}</p></div>`).join('')}</div>
+   <h3 style="text-transform:uppercase;letter-spacing:.6px;font-size:22px;margin-bottom:8px"><span class="barx"></span>Нээлттэй байрууд</h3>
+   <ul class="jlist">${jobs.map(j=>jli(j,'jobs')).join('')}</ul>`},
+ 'procurement':{nav:null,bc:[['Нүүр','#/'],['Худалдан авалт']],title:'Худалдан авалт',sub:'Нийлүүлэгчдэд зориулсан ил тод, шударга худалдан авалтын бодлого.',
+   body:`<div class="prose"><p>Хүдэр Групп нь шударга өрсөлдөөн, ил тод байдлыг эрхэмлэн худалдан авалтаа явуулдаг. Нийлүүлэгч болохыг хүсвэл доорх бүртгэлд хамрагдана уу.</p></div>
+   <div class="dl" style="margin-top:22px"><div><b>Нийлүүлэгчээр бүртгүүлэх</b><div style="color:var(--muted);font-size:13px">Байгууллагын мэдээллээ бүртгүүлнэ</div></div><span class="dlb" data-route="#/contact">Бүртгүүлэх</span></div>
+   <div class="dl"><div><b>Худалдан авалтын бодлого 2026</b><div style="color:var(--muted);font-size:13px">PDF · журам</div></div><span class="dlb" onclick="alert('Жишээ файл — бодит журмыг энд холбоно.')">Татах</span></div>
+   <h3 style="text-transform:uppercase;letter-spacing:.6px;font-size:22px;margin:36px 0 8px"><span class="barx"></span>Идэвхтэй худалдан авалт (8)</h3>
+   <ul class="jlist">${proc.map(p=>jli(p,'proc')).join('')}</ul>`},
+ 'contact':{nav:null,bc:[['Нүүр','#/'],['Холбоо барих']],title:'Холбоо барих',sub:'Бидэнтэй холбогдох, санал хүсэлтээ илгээх.',
+   body:`<div class="contact-grid">
+     <div class="cinfo">
+       <div class="ci"><div class="l">Хаяг</div><div class="v">Улаанбаатар хот,<br>Сүхбаатар дүүрэг, Хүдэр Тауэр</div></div>
+       <div class="ci"><div class="l">Утас</div><div class="v">+976 7000 0000</div></div>
+       <div class="ci"><div class="l">И-мэйл</div><div class="v">info@khuder.mn</div></div>
+       <div class="ci"><div class="l">Цаг</div><div class="v">Даваа–Баасан, 09:00–18:00</div></div>
+     </div>
+     <div>
+       <div class="form-ok" id="formOk">Таны санал, хүсэлтийг хүлээн авлаа. Баярлалаа.</div>
+       <div class="form-err" id="formErr"></div>
+       <div class="cform">
+         <div><label>Нэр</label><input id="f-name" placeholder="Таны нэр"></div>
+         <div><label>И-мэйл</label><input id="f-email" placeholder="email@жишээ.mn"></div>
+         <div class="full"><label>Сэдэв</label><input id="f-subj" placeholder="Сэдэв"></div>
+         <div class="full"><label>Зурвас</label><textarea id="f-msg" placeholder="Санал, хүсэлтээ бичнэ үү..."></textarea></div>
+         <div class="full"><button id="f-send">Илгээх</button></div>
+       </div>
+     </div>
+   </div>`},
+ 'privacy':{nav:null,bc:[['Нүүр','#/'],['Нууцлалын бодлого']],title:'Нууцлалын бодлого',sub:'Таны хувийн мэдээллийг хэрхэн цуглуулж, ашиглаж, хамгаалдаг тухай.',
+   body:`<div class="prose"><p>Хүдэр Групп нь хэрэглэгчдийн хувийн мэдээллийн нууцлалыг чухалчилдаг бөгөөд холбогдох хууль тогтоомжийн дагуу хамгаална.</p>
+   <h3>Цуглуулдаг мэдээлэл</h3><p>Холбоо барих маягт, ажлын анкет, нийлүүлэгчийн бүртгэлээр дамжуулан таны нэр, и-мэйл, утас зэрэг мэдээллийг цуглуулж болно.</p>
+   <h3>Мэдээллийн ашиглалт</h3><p>Цуглуулсан мэдээллийг зөвхөн таны хүсэлтэд хариу өгөх, ажлын байр, худалдан авалттай холбоотой харилцах зорилгоор ашиглана. Гуравдагч этгээдэд худалдахгүй.</p>
+   <h3>Cookie ашиглалт</h3><p>Вэб сайтын үйл ажиллагааг сайжруулах зорилгоор cookie ашиглаж болно. Та хөтчийнхөө тохиргооноос үүнийг хязгаарлах боломжтой.</p>
+   <h3>Таны эрх</h3><p>Та өөрийн мэдээлэлд хандах, засварлуулах, устгуулах хүсэлт гаргах эрхтэй. <a class="seeall" data-route="#/contact" style="display:inline">Бидэнтэй холбогдоно уу →</a></p></div>`},
+ 'terms':{nav:null,bc:[['Нүүр','#/'],['Ашиглалтын нөхцөл']],title:'Сайт ашиглалтын нөхцөл',sub:'Энэхүү вэб сайтыг ашиглахад мөрдөгдөх нөхцөл.',
+   body:`<div class="prose"><p>Энэхүү вэб сайтыг ашигласнаар та доорх нөхцөлийг хүлээн зөвшөөрсөнд тооцно.</p>
+   <h3>Оюуны өмч</h3><p>Сайтад байрлах бүх лого, текст, зураг, загвар нь Хүдэр Группын өмч бөгөөд зөвшөөрөлгүйгээр хуулбарлахыг хориглоно.</p>
+   <h3>Хариуцлагын хязгаарлалт</h3><p>Сайтад нийтлэгдсэн мэдээлэл нь ерөнхий мэдээллийн зорилготой. Бид мэдээллийн үнэн зөв, бүрэн бүтэн байдлыг бүх тохиолдолд баталгаажуулахгүй.</p>
+   <h3>Гадаад холбоос</h3><p>Сайт нь гуравдагч этгээдийн вэб хуудас руу холбоос агуулж болох бөгөөд тэдгээрийн агуулгад бид хариуцлага хүлээхгүй.</p>
+   <h3>Өөрчлөлт</h3><p>Бид энэхүү нөхцөлийг урьдчилан мэдэгдэлгүйгээр өөрчлөх эрхтэй.</p></div>`}
+};
+
+// per-company pages (generated)
+subs.forEach((s,i)=>{
+  pages['business/'+i]={nav:'business',bc:[['Нүүр','#/'],['Бизнесийн салбар','#/business'],[s.name]],title:s.name,sub:s.sec+' · '+s.loc,
+    body:`<div class="prose" style="margin-bottom:34px"><p style="font-size:18px;color:var(--ink)">${s.long}</p></div>
+    <div class="grid3" style="margin-bottom:40px">
+      <div class="card"><div class="vnum">${s.y}</div><h4>Байгуулсан он</h4></div>
+      <div class="card"><div class="vnum">${s.emp}</div><h4>Ажилтан</h4></div>
+      <div class="card"><div class="vnum" style="font-size:24px;padding-top:6px">${s.loc}</div><h4>Байршил</h4></div>
+    </div>
+    <h3 style="text-transform:uppercase;letter-spacing:.6px;font-size:22px;margin-bottom:8px"><span class="barx"></span>Үндсэн чиглэл</h3>
+    <ul class="prod" style="max-width:820px">${s.prod.map(p=>`<li><div class="pt">${p.t}</div><div class="pd">${p.d}</div></li>`).join('')}</ul>
+    <div style="margin-top:36px"><a class="seeall" data-route="#/business">← Бүх компани руу буцах</a></div>`};
+});
+
+// ===== ROUTER =====
+const homeEl=document.getElementById('home'),subEl=document.getElementById('subpage');
+function setNav(navKey){document.querySelectorAll('.menu a[data-nav]').forEach(a=>a.classList.toggle('active',a.dataset.nav===navKey));}
+function render(){
+  let h=location.hash||'#/';
+  const key=h.replace(/^#\//,'').replace(/\/$/,'');
+  closeMM();
+  if(!key||h==='#/'){ // home
+    homeEl.style.display='';subEl.style.display='none';subEl.innerHTML='';setNav('home');window.scrollTo(0,0);return;
+  }
+  const p=pages[key];
+  if(!p){homeEl.style.display='';subEl.style.display='none';setNav('home');return;}
+  homeEl.style.display='none';subEl.style.display='block';
+  subEl.innerHTML=`<div class="page-hero"><div class="wrap"><div class="crumb">${p.bc.map(b=>b[1]?`<a data-route="${b[1]}">${b[0]}</a>`:`<b style="color:#fff;font-weight:500">${b[0]}</b>`).join('<span>/</span>')}</div><h1>${p.title}</h1>${p.sub?`<p>${p.sub}</p>`:''}</div></div><div class="page-body"><div class="wrap">${p.body}</div></div>`;
+  setNav(p.nav);
+  bindComp(subEl);
+  bindFaq();bindForm();
+  window.scrollTo(0,0);
+}
+function bindFaq(){subEl.querySelectorAll('.faq .item').forEach(it=>{const q=it.querySelector('.q');if(q)q.onclick=()=>it.classList.toggle('open');});}
+function bindForm(){const b=subEl.querySelector('#f-send');if(!b)return;
+  b.onclick=()=>{
+    const name=subEl.querySelector('#f-name'),email=subEl.querySelector('#f-email'),subj=subEl.querySelector('#f-subj'),msg=subEl.querySelector('#f-msg');
+    const err=subEl.querySelector('#formErr'),ok=subEl.querySelector('#formOk');
+    [name,email,subj,msg].forEach(el=>el.style.borderColor='');
+    let problems=[];
+    if(!name.value.trim()){problems.push('нэр');name.style.borderColor='#c0392b';}
+    const em=email.value.trim();
+    if(!em){problems.push('и-мэйл');email.style.borderColor='#c0392b';}
+    else if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em)){problems.push('зөв и-мэйл');email.style.borderColor='#c0392b';}
+    if(!msg.value.trim()){problems.push('зурвас');msg.style.borderColor='#c0392b';}
+    if(problems.length){
+      err.textContent='Дараахыг бөглөнө үү: '+problems.join(', ')+'.';
+      err.style.display='block';ok.style.display='none';
+      err.scrollIntoView({behavior:'smooth',block:'center'});return;
+    }
+    err.style.display='none';ok.style.display='block';
+    [name,email,subj,msg].forEach(el=>el.value='');
+    ok.scrollIntoView({behavior:'smooth',block:'center'});
+  };
+}
+
+// route links (delegation)
+document.addEventListener('click',e=>{const a=e.target.closest('[data-route]');if(a){e.preventDefault();const r=a.dataset.route;if(location.hash===r)render();else location.hash=r;}});
+addEventListener('hashchange',render);
+render();
+</script>
+</body>
+</html>

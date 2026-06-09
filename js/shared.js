@@ -164,9 +164,13 @@ function renderNav() {
 
   const html = `
 <div class="topbar"><div class="wrap">
-  <a href="jobs.html">Ажлын байр</a>
+  <a href="esg-report.html">Тогтвортой хөгжил</a>
   <span class="sep"></span>
-  <a href="contact.html">Холбоо барих</a>
+  <a href="procurement.html">Нийлүүлэгчид</a>
+  <span class="sep"></span>
+  <a href="jobs.html">Карьер</a>
+  <span class="sep"></span>
+  <span class="lang">МН</span>
 </div></div>
 
 <nav>
@@ -181,22 +185,32 @@ function renderNav() {
           <a href="about-values.html">Үнэт зүйлс, зарчим</a>
           <a href="about-history.html">Бидний түүх</a>
           <a href="about-leadership.html">Удирдлага</a>
+          <a href="about-shareholders.html">Хувьцаа эзэмшигчид</a>
         </div>
       </li>
-      <li><a href="business.html"${active(['business','company'])}>Төслүүд</a></li>
+      <li><a href="business.html"${active(['business','company'])}>Бизнесийн бүтэц</a></li>
       <li>
-        <a href="news.html"${active(['news'])}>Мэдээ <span class="caret">▼</span></a>
+        <a href="esg-report.html"${active(['esg'])}>Тогтвортой хөгжил <span class="caret">▼</span></a>
+        <div class="dropdown">
+          <a href="esg-report.html">Тогтвортой хөгжлийн тайлан</a>
+          <a href="esg-principles.html">Зарчим, бодлого</a>
+          <a href="esg-projects.html">Нийгмийн хариуцлага</a>
+        </div>
+      </li>
+      <li>
+        <a href="news.html"${active(['news'])}>Мэдээ мэдээлэл <span class="caret">▼</span></a>
         <div class="dropdown">
           <a href="news.html">Мэдээ</a>
           <a href="news-faq.html">Түгээмэл асуулт</a>
         </div>
       </li>
-      <li><a href="contact.html"${active(['contact'])}>Холбоо барих</a></li>
+      <li><a href="jobs.html"${active(['jobs'])}>Карьер</a></li>
     </ul>
     <div class="nav-utils">
       <button class="icon-btn" id="searchBtn" aria-label="Хайх">
         <svg viewBox="0 0 24 24" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.4-4.4"/></svg>
       </button>
+      <span class="lang">МН</span>
       <div class="burger" id="burger"><span></span><span></span><span></span></div>
     </div>
   </div>
@@ -208,10 +222,14 @@ function renderNav() {
   <a href="about-values.html" class="sub">Үнэт зүйлс, зарчим</a>
   <a href="about-history.html" class="sub">Бидний түүх</a>
   <a href="about-leadership.html" class="sub">Удирдлага</a>
-  <a href="business.html">Төслүүд</a>
-  <a href="news.html">Мэдээ</a>
+  <a href="about-shareholders.html" class="sub">Хувьцаа эзэмшигчид</a>
+  <a href="business.html">Бизнесийн бүтэц</a>
+  <a href="esg-report.html">Тогтвортой хөгжил</a>
+  <a href="esg-principles.html" class="sub">Зарчим, бодлого</a>
+  <a href="esg-projects.html" class="sub">Нийгмийн хариуцлага</a>
+  <a href="news.html">Мэдээ мэдээлэл</a>
   <a href="news-faq.html" class="sub">Түгээмэл асуулт</a>
-  <a href="jobs.html">Ажлын байр</a>
+  <a href="jobs.html">Карьер</a>
   <a href="contact.html">Холбоо барих</a>
 </div>`;
 
@@ -234,17 +252,21 @@ function renderFooter() {
         <a href="about-history.html">Бидний түүх</a>
         <a href="about-leadership.html">Удирдлага</a>
         <a href="about-values.html">Үнэт зүйлс</a>
+        <a href="about-shareholders.html">Хувьцаа эзэмшигчид</a>
       </div>
       <div>
-        <h5>Төслүүд</h5>
+        <h5>Бизнесийн бүтэц</h5>
         <a href="business.html">Бүх төслүүд</a>
         <a href="company.html?id=0">Nym Bay Store</a>
         <a href="company.html?id=1">BairX</a>
+        <a href="company.html?id=2">UB Energy</a>
         <a href="company.html?id=4">AI Stylist</a>
       </div>
       <div>
         <h5>Холбоо барих</h5>
         <a href="contact.html">Санал, хүсэлт</a>
+        <a href="jobs.html">Карьер</a>
+        <a href="procurement.html">Нийлүүлэгчид</a>
         <p>info@geree.mn</p>
         <p>Улаанбаатар хот</p>
       </div>

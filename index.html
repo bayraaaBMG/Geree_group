@@ -23,6 +23,30 @@
   <div class="dots" id="dots"></div>
 </div>
 
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="wrap">
+    <div class="stats-row">
+      <div class="stat-item">
+        <div class="stat-num">2022</div>
+        <div class="stat-label">Үүссэн он</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">5</div>
+        <div class="stat-label">Идэвхтэй төсөл</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">50+</div>
+        <div class="stat-label">Ажиллагсад</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">4</div>
+        <div class="stat-label">Бизнесийн чиглэл</div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- БИД ЮУ ХИЙДЭГ ВЭ? -->
 <section class="what-section">
   <div class="wrap">
@@ -158,10 +182,10 @@ const slidesEl = document.getElementById('slides');
 const dotsEl   = document.getElementById('dots');
 
 const heroSlides = [
-  {bg:'#1a1424', k:'Технологи', t:'Гэрээ Групп — Шинэ үеийн Монгол групп компани', d:'Технологи, үйлчилгээ, хөрөнгө оруулалтад суурилсан 5 идэвхтэй төсөлтэй бүтээлч групп.', href:'about.html'},
-  {bg:'#14201a', k:'Худалдаа',   t:'Nym Bay Store — Найдвартай онлайн дэлгүүр',      d:'Монгол болон гадаадын брэндийн жинхэнэ бараа хурдан хүргэлттэйгээр.',                   href:'company.html?id=0'},
-  {bg:'#1a1814', k:'Үл хөдлөх', t:'BairX — Ухаалаг орон сууц хайх платформ',         d:'Үл хөдлөх зах зээлийг дижитал технологиор хялбар, ил тод болгодог.',                    href:'company.html?id=1'},
-  {bg:'#14181e', k:'AI',         t:'AI Stylist — Таны хувийн дижитал стилист',         d:'Хиймэл оюун ухаанаар хувийн загварыг шинжлэн зөвлөмж болгодог шинэ платформ.',          href:'company.html?id=4'}
+  {bg:'#0a1530', k:'Технологи', t:'Гэрээ Групп — Шинэ үеийн Монгол групп компани', d:'Технологи, үйлчилгээ, хөрөнгө оруулалтад суурилсан 5 идэвхтэй төсөлтэй бүтээлч групп.', href:'about.html'},
+  {bg:'#0d1f2d', k:'Худалдаа',   t:'Nym Bay Store — Найдвартай онлайн дэлгүүр',      d:'Монгол болон гадаадын брэндийн жинхэнэ бараа хурдан хүргэлттэйгээр.',                   href:'company.html?id=0'},
+  {bg:'#0f1a38', k:'Үл хөдлөх', t:'BairX — Ухаалаг орон сууц хайх платформ',         d:'Үл хөдлөх зах зээлийг дижитал технологиор хялбар, ил тод болгодог.',                    href:'company.html?id=1'},
+  {bg:'#091428', k:'AI',         t:'AI Stylist — Таны хувийн дижитал стилист',         d:'Хиймэл оюун ухаанаар хувийн загварыг шинжлэн зөвлөмж болгодог шинэ платформ.',          href:'company.html?id=4'}
 ];
 
 slidesEl.innerHTML = heroSlides.map((s,i) =>

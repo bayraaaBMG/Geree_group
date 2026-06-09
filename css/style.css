@@ -104,6 +104,8 @@ section{padding:84px 0}
 .ul-list{display:flex;flex-wrap:wrap;gap:12px}
 .ul-list a{background:var(--white);border:1px solid var(--line);padding:13px 20px;font-family:'Oswald';font-size:14px;letter-spacing:.5px;text-transform:uppercase;color:var(--ink2);transition:.2s;cursor:pointer}
 .ul-list a:hover{background:var(--copper);color:#fff;border-color:var(--copper)}
+.ul-title{font-family:'Oswald';text-transform:uppercase;letter-spacing:1px;font-size:20px;margin-bottom:18px}
+.social-contact{margin-top:20px;color:var(--muted);font-size:14px}
 .social h4{font-size:20px;text-transform:uppercase;letter-spacing:1px;margin-bottom:16px}
 .social-row{display:flex;gap:12px}
 .social-row a{width:44px;height:44px;border:1px solid var(--line);background:var(--white);display:grid;place-items:center;color:var(--ink2);transition:.2s}
@@ -189,7 +191,7 @@ footer{background:var(--ink);color:#c7c0b4;padding:60px 0 26px}
 .cinfo .ci .v{font-size:15.5px}
 
 /* SEARCH OVERLAY */
-.search-ov{position:fixed;inset:0;z-index:95;background:rgba(20,17,13,.6);backdrop-filter:blur(5px);opacity:0;pointer-events:none;transition:.25s}
+.search-ov{position:fixed;inset:0;z-index:95;background:rgba(20,17,13,.6);-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);opacity:0;pointer-events:none;transition:.25s}
 .search-ov.open{opacity:1;pointer-events:auto}
 .search-inner{background:var(--white);max-width:680px;margin:0 auto;margin-top:14vh;position:relative;transform:translateY(-16px);transition:.3s;box-shadow:0 30px 70px rgba(0,0,0,.3)}
 .search-ov.open .search-inner{transform:none}
@@ -206,7 +208,7 @@ footer{background:var(--ink);color:#c7c0b4;padding:60px 0 26px}
 .sr-empty{padding:30px 26px;color:var(--muted);text-align:center}
 
 /* MODAL */
-.modal{position:fixed;inset:0;z-index:90;display:grid;place-items:center;padding:22px;background:rgba(20,17,13,.6);backdrop-filter:blur(5px);opacity:0;pointer-events:none;transition:.3s}
+.modal{position:fixed;inset:0;z-index:90;display:grid;place-items:center;padding:22px;background:rgba(20,17,13,.6);-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);opacity:0;pointer-events:none;transition:.3s}
 .modal.open{opacity:1;pointer-events:auto}
 .modal-box{background:var(--white);max-width:620px;width:100%;max-height:88vh;overflow-y:auto;position:relative;transform:translateY(18px) scale(.98);transition:.32s}
 .modal.open .modal-box{transform:none}
@@ -227,6 +229,22 @@ footer{background:var(--ink);color:#c7c0b4;padding:60px 0 26px}
 .prod li .pt{font-weight:600;display:flex;gap:9px;align-items:baseline;font-size:15.5px}
 .prod li .pt::before{content:"▸";color:var(--copper);flex-shrink:0}
 .prod li .pd{color:var(--muted);font-size:13.5px;line-height:1.5;margin:3px 0 0 17px}
+
+/* WHAT WE DO SECTION */
+.what-section{background:var(--white);border-top:1px solid var(--line)}
+.service-card{display:flex;gap:20px;align-items:flex-start}
+.service-icon{width:48px;height:48px;flex-shrink:0;display:grid;place-items:center;background:var(--copper);color:#fff}
+.service-icon svg{width:24px;height:24px;stroke:currentColor;fill:none;stroke-width:1.6;stroke-linecap:round}
+.service-card h4{margin-bottom:8px}
+.service-card p{color:var(--muted);font-size:14.5px}
+
+/* FOUNDER SECTION */
+.founder-sec{background:var(--ink);color:#fff;padding:80px 0}
+.founder-inner{max-width:760px;margin:0 auto;text-align:center}
+.founder-avatar{width:72px;height:72px;border-radius:50%;background:var(--copper);display:grid;place-items:center;margin:0 auto 28px;font-family:'Oswald';font-size:26px;font-weight:700;color:#fff;letter-spacing:1px}
+.founder-quote{font-size:clamp(17px,2.3vw,22px);line-height:1.65;color:#ddd7ce;margin-bottom:30px;font-style:italic}
+.founder-name{font-family:'Oswald';font-size:18px;letter-spacing:1.5px;text-transform:uppercase;color:var(--copper-bright)}
+.founder-role{color:#a9a293;font-size:14px;margin-top:6px;letter-spacing:.5px}
 
 @media(max-width:1000px){
   .menu,.nav-utils .lang,.nav-utils .icon-btn:not(#searchBtn){display:none}
